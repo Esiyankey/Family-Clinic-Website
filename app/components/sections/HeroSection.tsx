@@ -6,10 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import type { Variants } from "framer-motion";
 import { GoArrowRight } from "react-icons/go";
-import { IoIosArrowForward ,IoIosArrowBack} from "react-icons/io";
-
-
-
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const slides = [
   {
@@ -61,8 +58,6 @@ const cards = [
     expand: "View Hours",
   },
 ];
-
-
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -169,12 +164,15 @@ export default function HeroSection() {
 
                   <motion.p
                     variants={itemVariants}
-                    className="text-lg md:text-xl mb-8 text-gray-700"
+                    className="hidden lg:flex text-lg md:text-xl mb-8 text-gray-700"
                   >
                     {slides[currentSlide].description}
                   </motion.p>
 
-                  <motion.div variants={buttonContainer} className="flex flex-col lg:flex-row gap-4">
+                  <motion.div
+                    variants={buttonContainer}
+                    className="flex flex-col lg:flex-row gap-4"
+                  >
                     <motion.div variants={buttonItem}>
                       <Button className="p-7 w-full bg-[#1a76d1] text-white rounded-[3px] text-lg font-semibold">
                         Book Appointment
@@ -196,17 +194,15 @@ export default function HeroSection() {
           onClick={prevSlide}
           className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-blue-600 text-white rounded-full p-3 hover:bg-blue-700"
         >
-        <IoIosArrowBack size={24} />
+          <IoIosArrowBack size={24} />
         </button>
         <button
           onClick={nextSlide}
           className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-blue-600 text-white rounded-full p-3 hover:bg-blue-700"
         >
-          <IoIosArrowForward  size={24} />
+          <IoIosArrowForward size={24} />
         </button>
       </div>
-
-     
 
       <div className="container max-w-7xl mx-auto px-4 -mt-20 relative z-30">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -215,7 +211,6 @@ export default function HeroSection() {
               key={index}
               className="relative lg:w-96 bg-[#1a76d1] text-white p-8 rounded-sm shadow-xl hover:shadow-2xl transition-all overflow-hidden group"
             >
-             
               <div className="absolute bottom-0 right-0 opacity-10 group-hover:opacity-20 transition-opacity">
                 <svg
                   width="180"
@@ -232,7 +227,6 @@ export default function HeroSection() {
                 </svg>
               </div>
 
-             
               <div className="relative z-10">
                 <p className="text-sm text-blue-100 mb-3 font-medium tracking-wide uppercase">
                   {card.category}
@@ -240,12 +234,14 @@ export default function HeroSection() {
                 <h3 className="text-2xl font-bold mb-4 leading-tight">
                   {card.title}
                 </h3>
-                <p className="hidden lg:flex text-blue-50 leading-relaxed mb-6">
+                <p className="flex text-blue-50 leading-relaxed mb-6">
                   {card.description}
                 </p>
                 <button className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group/btn">
-                  <span className="uppercase text-sm tracking-wider">{card.expand}</span>
-                  <GoArrowRight  className="w-5 h-5" />
+                  <span className="uppercase text-sm tracking-wider">
+                    {card.expand}
+                  </span>
+                  <GoArrowRight className="w-5 h-5" />
                 </button>
               </div>
             </div>
