@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ImPhone } from "react-icons/im";
 import { HiMail } from "react-icons/hi";
 import { IoMdMenu } from "react-icons/io";
@@ -29,7 +29,7 @@ export const Navbar = () => {
     <nav>
       <div className="lg:flex-row mr-3 flex-col flex lg:justify-between items-end lg:items-center max-w-7xl lg:mx-auto py-2 lg:py-4">
         <div className="flex items-center gap-2 lg:gap-5">
-          <div className="flex gap-2 items-center">
+          <div className="hidden lg:flex gap-2 items-center">
             <ImPhone
               size={15}
               className="fill-current text-[#3385d5]"
@@ -50,7 +50,7 @@ export const Navbar = () => {
 
       <div
         className={`bg-white ${
-          scrollY > 40 ? "fixed top-0 w-full z-50" : "relative "
+          scrollY > 40 ? "fixed top-0 w-full z-50 shadow-sm" : "relative "
         } `}
       >
         <div className="flex  justify-between items-center max-w-7xl mx-auto py-4">
@@ -67,7 +67,7 @@ export const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xl font-medium  hover:border-b-2 border-b-[#3385d5] transition"
+                className="text-xl font-medium  transition-ease-in-out "
               >
                 {link.name}
               </a>
@@ -87,7 +87,7 @@ export const Navbar = () => {
             />
           </div>
           {showMenu && (
-            <div className="absolute top-32 right-4 bg-white w-full py-1 justify-start items-start px-8 flex flex-col gap-4 lg:hidden ">
+            <div className=" absolute top-16 transition-all  z-20 bg-white w-full py-1 justify-start items-start px-8 flex flex-col gap-4 lg:hidden ">
               {links.map((link) => (
                 <a
                   key={link.name}

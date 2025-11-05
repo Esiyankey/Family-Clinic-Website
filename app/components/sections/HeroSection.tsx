@@ -17,7 +17,7 @@ const slides = [
     title: "Welcome to Family Clinic",
     subtitle: "Your trusted partner in health and wellness.",
     description:
-      "At Family Clinic, we provide high-quality, compassionate care designed for individuals and families across Maryland. We combine advanced medical technology, expert healthcare professionals, and a patient-centered approach to ensure that every visit is efficient, personalized, and comfortable.",
+      "At Family Clinic, we provide high-quality, compassionate care designed for individuals and families across Maryland. ",
     image: "/images/hero_image_1.jpg",
   },
   {
@@ -25,7 +25,7 @@ const slides = [
     title: "Your Health, Our Priority",
     subtitle: "From chronic care to annual checkups.",
     description:
-      "Whether you’re managing a chronic condition, scheduling your annual physical, or simply focusing on healthy living, our team is here to support you every step of the way.",
+      "Whether you’re managing a chronic condition, scheduling your annual physical, our team is here to support you every step of the way.",
     image: "/images/hero_image_4.jpg",
   },
   {
@@ -33,7 +33,7 @@ const slides = [
     title: "Book Your Appointment Today",
     subtitle: "Healthcare made easy.",
     description:
-      "Schedule your visit online — just enter your name, date of birth, address, phone number, and ID, then upload your insurance card and choose a date. Receive a confirmation email instantly.",
+      "Schedule your visit online and choose a date. Receive a confirmation email instantly.",
     image: "/images/hero_image_3.jpg",
   },
 ];
@@ -142,7 +142,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="absolute inset-0 flex items-center mb-24 z-10">
+        <div className="absolute inset-0 flex items-center lg:ml-10 mb-24  z-10">
           <div className="container mx-auto px-6">
             <div className="max-w-2xl text-gray-800">
               <AnimatePresence mode="wait">
@@ -208,14 +208,14 @@ export default function HeroSection() {
 
      
 
-      <div className="container max-w-7xl mx-auto px-4 -mt-28 relative z-30">
+      <div className="container max-w-7xl mx-auto px-4 -mt-20 relative z-30">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((card, index) => (
             <div
               key={index}
               className="relative lg:w-96 bg-[#1a76d1] text-white p-8 rounded-sm shadow-xl hover:shadow-2xl transition-all overflow-hidden group"
             >
-              {/* Medical Cross Icon in Background */}
+             
               <div className="absolute bottom-0 right-0 opacity-10 group-hover:opacity-20 transition-opacity">
                 <svg
                   width="180"
@@ -232,7 +232,7 @@ export default function HeroSection() {
                 </svg>
               </div>
 
-              {/* Card Content */}
+             
               <div className="relative z-10">
                 <p className="text-sm text-blue-100 mb-3 font-medium tracking-wide uppercase">
                   {card.category}
