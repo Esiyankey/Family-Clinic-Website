@@ -240,7 +240,7 @@ export default function HeroSection() {
                 <h3 className="text-2xl font-bold mb-4 leading-tight">
                   {card.title}
                 </h3>
-                <p className="text-blue-50 leading-relaxed mb-6">
+                <p className="hidden lg:flex text-blue-50 leading-relaxed mb-6">
                   {card.description}
                 </p>
                 <button className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group/btn">
