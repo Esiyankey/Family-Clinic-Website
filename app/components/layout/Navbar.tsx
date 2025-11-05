@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, PhoneCallIcon } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import React from 'react'
 
 export const Navbar = () => {
