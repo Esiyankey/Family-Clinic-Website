@@ -2,15 +2,15 @@ import React from "react";
 import Image from "next/image";
 export const WhyChooseUs = () => {
   const features = [
-    "Comprehensive family healthcare tailored to your needs — from preventive to critical care.",
+    "Comprehensive family healthcare tailored to your needs .",
     "Integrated services combining diagnostics, counselling, and wellness programs under one roof.",
     "Cutting-edge digital tools including online booking, digital health records, and telehealth options.",
     "Strong relationships with local insurers, providers, and community partners for coordinated care.",
-    "Commitment to continuous improvement — we monitor patient feedback daily to enhance quality and satisfaction.",
+    "Commitment to continuous improvement .",
   ];
 
   return (
-    <section className="mt-28">
+    <section className="mt-28 mx-5">
       <div className="flex flex-col items-center">
         <h1 className="text-3xl md:text-5xl font-semibold my-6">
           Why Choose Family Clinic?
@@ -39,11 +39,7 @@ export const WhyChooseUs = () => {
             <div className="w-16 h-1 bg-blue-600"></div>
           </div>
 
-          <p className="text-[#abaaab] max-w-xl  text-lg leading-relaxed mb-12">
-            Our clinic offers comprehensive medical services with a focus on
-            personalized care. We combine state-of-the-art technology with
-            compassionate service to provide outstanding patient experiences.
-          </p>
+          
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map((feature, index) => (

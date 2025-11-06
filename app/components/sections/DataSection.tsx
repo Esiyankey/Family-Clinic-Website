@@ -53,7 +53,7 @@ export const DataSection = () => {
   );
 
   return (
-    <div className="bg-[#1a76d1]  mt-36">
+    <div className="bg-[#4891da]  mt-36">
       <div className="text-white flex justify-around items-center max-w-7xl mx-auto py-24 flex-wrap gap-10">
         {data.map((item) => (
           <DataCard
