@@ -56,9 +56,9 @@ export const Navbar = () => {
         <div className="flex  justify-between items-center max-w-7xl mx-auto py-4">
           <div>
             <Image
-              src="/images/logo.png"
-              width={200}
-              height={200}
+              src="/images/family_clinic_logo.png"
+              width={80}
+              height={80}
               alt="logo-here"
             />
           </div>

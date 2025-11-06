@@ -190,18 +190,22 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-blue-600 text-white rounded-full p-3 hover:bg-blue-700"
-        >
-          <IoIosArrowBack size={24} />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-blue-600 text-white rounded-full p-3 hover:bg-blue-700"
-        >
-          <IoIosArrowForward size={24} />
-        </button>
+        <div className="hidden md:flex">
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-blue-600 text-white rounded-full p-3 hover:bg-blue-700"
+          >
+            <IoIosArrowBack size={24} />
+          </button>
+        </div>
+        <div className="hidden md:flex">
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-blue-600 text-white rounded-full p-3 hover:bg-blue-700"
+          >
+            <IoIosArrowForward size={24} />
+          </button>
+        </div>
       </div>
 
       <div className="container max-w-7xl mx-auto px-4 -mt-32 relative z-30">
