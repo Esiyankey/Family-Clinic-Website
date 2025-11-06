@@ -115,7 +115,7 @@ export default function HeroSection() {
 
   return (
     <section className="">
-      <div className="relative w-full h-[600px] overflow-hidden">
+      <div className="relative w-full h-[650px] overflow-hidden">
         <div className="relative w-full h-screen overflow-hidden">
           <div
             className="flex transition-transform duration-1000 ease-in-out"
@@ -204,7 +204,7 @@ export default function HeroSection() {
         </button>
       </div>
 
-      <div className="container max-w-7xl mx-auto px-4 -mt-20 relative z-30">
+      <div className="container max-w-7xl mx-auto px-4 -mt-32 relative z-30">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((card, index) => (
             <div
