@@ -11,13 +11,13 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mx-4">
         <div className="w-32 h-32 rounded-full flex justify-center items-center border border-gray-300 hover:bg-[#1a76d1] bg-white">
             {icon}
         </div>
         <div className="text-center mt-10">
             <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="text-lg">{description}</p>
+            <p className="text-lg ">{description}</p>
         </div>
     </div>
 );
@@ -42,9 +42,9 @@ export const FamilyHealthCare: React.FC = () => {
     ];
 
     return (
-        <section className="bg-white mt-32">
+        <section className="bg-white mt-32  ">
             <div className="flex flex-col items-center">
-                <h1 className="text-3xl md:text-5xl font-semibold my-6">
+                <h1 className="text-3xl md:text-5xl text-center font-semibold my-6">
                     Comprehensive Family HealthCare
                 </h1>
                 <Image

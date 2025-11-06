@@ -3,6 +3,7 @@ import SplashScreen from "./components/features/SplashScreen";
 import { DataSection } from "./components/sections/DataSection";
 import { FamilyHealthCare } from "./components/sections/FamilyHealthCare";
 import HeroSection from "./components/sections/HeroSection";
+import { WhyChooseUs } from "./components/sections/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <FamilyHealthCare/>
       <DataSection/>
+      <WhyChooseUs/>
     </div>
   );
 }
