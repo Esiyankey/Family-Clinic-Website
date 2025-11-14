@@ -13,6 +13,12 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Family Clinic",
   description: "Welcome to Family Clinic your trusted partner in health and wellness",
+  authors: [{ name: "Family Clinic", url: "https://familyclinic.com" }],
+  keywords: [
+    "Family Clinic",
+    "Healthcare", 
+    "Telemedicine",
+  ]
 };
 
 export default function RootLayout({

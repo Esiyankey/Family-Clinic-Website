@@ -114,7 +114,7 @@ export default function Footer() {
         <div className="border-t border-blue-400 mt-12 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
             <div className="flex items-start gap-3">
-              <BiMapPin size={20} className="flex-shrink-0 mt-1" />
+              <BiMapPin size={20} className="shrink-0 mt-1" />
               <div>
                 <p className="font-semibold mb-1">Address</p>
                 <p className="text-blue-50">
@@ -125,7 +125,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <ImPhone size={20} className="flex-shrink-0 mt-1" />
+              <ImPhone size={20} className="shrink-0 mt-1" />
               <div>
                 <p className="font-semibold mb-1">Phone</p>
                 <a
@@ -137,7 +137,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <HiMail size={20} className="flex-shrink-0 mt-1" />
+              <HiMail size={20} className="shrink-0 mt-1" />
               <div>
                 <p className="font-semibold mb-1">Email</p>
                 <a

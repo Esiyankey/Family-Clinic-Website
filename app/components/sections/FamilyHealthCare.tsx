@@ -12,7 +12,7 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => (
     <div className="flex flex-col justify-center items-center mx-4">
-        <div className="w-32 h-32 rounded-full flex justify-center items-center border border-gray-300 hover:bg-[#1a76d1] bg-white">
+        <div className="w-32 h-32 rounded-full flex justify-center items-center border border-gray-300 hover:text-white hover:bg-[#1a76d1] bg-white">
             {icon}
         </div>
         <div className="text-center mt-10">
