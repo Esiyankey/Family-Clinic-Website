@@ -11,9 +11,9 @@ interface HeroHeaderProps {
 export default function HeroHeader({ title, breadcrumbs }: HeroHeaderProps) {
   return (
     <div
-      className="relative w-full py-40 from-blue-400 to-blue-700 bg-linear-to-b overflow-hidden"
+      className="relative w-full py-36 from-blue-400 to-blue-700 bg-linear-to-b overflow-hidden"
       style={{
-        backgroundImage: `url('/images/hero_image_3.jpg')`,
+        backgroundImage: `url('/images/clinic_image.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundBlendMode: "overlay",
