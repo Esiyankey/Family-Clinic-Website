@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { FaArrowRight} from "react-icons/fa6";
 export const WhyChooseUs = () => {
   const features = [
     "Experienced, family-focused healthcare team",
@@ -36,7 +38,7 @@ export const WhyChooseUs = () => {
             <h2 className="text-4xl font-bold  mb-4">
               Why Our Patients Trust Us
             </h2>
-            <div className="w-16 h-1 bg-blue-600"></div>
+            <div className="w-16 h-1 bg-[#1a76d1]"></div>
           </div>
 
           
@@ -46,7 +48,7 @@ export const WhyChooseUs = () => {
               <div key={index} className="flex gap-4 items-start">
                 <div className="shrink-0 pt-1">
                   <svg
-                    className="w-5 h-5 text-blue-600"
+                    className="w-5 h-5 text-[#1a76d1]"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -59,6 +61,10 @@ export const WhyChooseUs = () => {
                 </p>
               </div>
             ))}
+            <Button className="p-5 w-44 bg-[#1a76d1] rounded-xs">
+              Learn More 
+              <FaArrowRight/>
+            </Button>
           </div>
         </div>
       </div>

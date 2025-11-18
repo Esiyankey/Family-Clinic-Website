@@ -1,51 +1,35 @@
-import React from "react";
 import Image from "next/image";
 import { BiCheck, BiShield } from "react-icons/bi";
 import { BsCreditCard } from "react-icons/bs";
-import { FaHandshake } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 import { CgClose } from "react-icons/cg";
 
 const plans = [
   {
     icon: <BiShield className="w-12 h-12 text-[#1a76d1] mx-auto" />,
-    title: "Insurance Coverage",
+    title: "Insurance Support",
     subtitle: "Accepted Providers",
     price: "",
     items: [
-      { text: "Works with most major insurance providers", available: true },
-      { text: "Clear communication and efficient claims", available: true },
-      { text: "Flexible coverage options", available: true },
-      { text: "Employer healthcare plans supported", available: true },
+      { text: "Verification of coverage before visits", available: true },
+      { text: "Help with claim submission and coordination", available: true },
+      
     ],
     button: "View Accepted Plans",
   },
   {
     icon: <BsCreditCard className="w-12 h-12 text-[#1a76d1] mx-auto" />,
-    title: "Billing & Payment",
+    title: "Billing Assistance:",
     subtitle: "Simple & Transparent",
     price: "",
     items: [
-      { text: "Easy billing process", available: true },
-      { text: "Online payment available", available: true },
-      { text: "Assistance for uninsured patients", available: true },
-      { text: "Flexible payment arrangements", available: true },
+      { text: "Payment plans for self-pay patients", available: true },
+      { text: "Flexible payment options (cash, card, or insurance)", available: true },
+      
     ],
     button: "Contact Billing Office",
   },
-  {
-    icon: <FaHandshake className="w-12 h-12 text-[#1a76d1] mx-auto" />,
-    title: "Financial Assistance",
-    subtitle: "Support When You Need It",
-    price: "",
-    items: [
-      { text: "Payment plans for families", available: true },
-      { text: "Discounts for frequent visits", available: true },
-      { text: "Coordination with insurance companies", available: true },
-      { text: "Personalized support via billing team", available: true },
-    ],
-    button: "Request Assistance",
-  },
+ 
 ];
 
 export const InsuranceAndBilling = () => {
@@ -64,10 +48,10 @@ export const InsuranceAndBilling = () => {
             className="my-4"
           />
           <p className="text-[#abaaab] text-center max-w-2xl mx-auto my-2 text-lg lg:text-xl">
-            Making healthcare more accessible, transparent, and affordable.
+            We work with most major insurance providers to make quality healthcare accessible and affordable.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 mt-24">
+        <div className="grid md:grid-cols-2 gap-8 mt-24">
           {plans.map((plan, index) => (
             <div
               key={index}

@@ -34,18 +34,18 @@ export const Navbar = () => {
           <div className="hidden lg:flex gap-2 items-center">
             <ImPhone
               size={15}
-              className="fill-current text-[#3385d5]"
+              className="fill-current text-[#1a76d1]"
               fill="currentColor"
             />
             <span className="text-lg">+1 (555) 123-4567</span>
           </div>
           <div className="flex gap-2 items-center">
-            <HiMail size={20} className="text-[#3385d5]" />
-            <span className="text-lg">info@familyclinic.com</span>
+            <HiMail size={20} className="text-[#1a76d1]" />
+            <span className="text-lg hover:text-[#1a76d1] cursor-pointer">info@familyclinic.com</span>
           </div>
         </div>
         <div>
-          <span className="hover:text-[#3385d5] text-lg">admin login</span>
+          <span className="hover:text-[#1a76d1] text-lg cursor-pointer">admin login</span>
         </div>
       </div>
       <div className="w-full h-0.5 bg-[#eeeeee]"></div>
@@ -101,7 +101,7 @@ export const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button className="p-6 bg-[#4891da] rounded-sm w-full text-lg">
+              <Button className="p-6 bg-[#1a76d1] rounded-sm w-full text-lg">
                 Book Appointment
               </Button>
             </div>
