@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 export const WhyChooseUs = () => {
   const features = [
-    "Comprehensive family healthcare tailored to your needs .",
-    "Integrated services combining diagnostics, counselling, and wellness programs under one roof.",
-    "Cutting-edge digital tools including online booking, digital health records, and telehealth options.",
-    "Strong relationships with local insurers, providers, and community partners for coordinated care.",
-    "Commitment to continuous improvement .",
+    "Experienced, family-focused healthcare team",
+    "Easy online booking & telemedicine support",
+    "Warm, patient-friendly environment",
+    "Accepts most major insurance plans",
+    "Trusted by families across Maryland",
   ];
 
   return (
