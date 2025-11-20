@@ -1,8 +1,9 @@
-import Image from "next/image";
+// header image handled by SectionHeader
 import { BiCheck, BiShield } from "react-icons/bi";
 import { BsCreditCard } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
 import { CgClose } from "react-icons/cg";
+import SectionHeader from "@/app/components/features/SectionHeader";
 
 const plans = [
   {
@@ -13,7 +14,6 @@ const plans = [
     items: [
       { text: "Verification of coverage before visits", available: true },
       { text: "Help with claim submission and coordination", available: true },
-      
     ],
     button: "View Accepted Plans",
   },
@@ -24,33 +24,24 @@ const plans = [
     price: "",
     items: [
       { text: "Payment plans for self-pay patients", available: true },
-      { text: "Flexible payment options (cash, card, or insurance)", available: true },
-      
+      {
+        text: "Flexible payment options (cash, card, or insurance)",
+        available: true,
+      },
     ],
     button: "Contact Billing Office",
   },
- 
 ];
 
 export const InsuranceAndBilling = () => {
   return (
     <section className="my-24">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col items-center text-center">
-          <h1 className="text-3xl md:text-5xl font-semibold my-2">
-            Insurance and Billing
-          </h1>
-          <Image
-            src="/images/section-img.png"
-            alt="section image"
-            width={50}
-            height={50}
-            className="my-4"
-          />
-          <p className="text-[#abaaab] text-center max-w-2xl mx-auto my-2 text-lg lg:text-xl">
-            We work with most major insurance providers to make quality healthcare accessible and affordable.
-          </p>
-        </div>
+        <SectionHeader
+          title="Insurance and Billing"
+          subtitle="We work with most major insurance providers to make quality healthcare accessible and affordable."
+          imageSrc="/images/section-img.png"
+        />
         <div className="grid md:grid-cols-2 gap-8 mt-24">
           {plans.map((plan, index) => (
             <div

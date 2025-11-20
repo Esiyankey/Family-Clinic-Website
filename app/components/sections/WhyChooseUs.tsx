@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { FaArrowRight} from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
+import SectionHeader from "@/app/components/features/SectionHeader";
 export const WhyChooseUs = () => {
   const features = [
     "Experienced, family-focused healthcare team",
@@ -13,24 +13,14 @@ export const WhyChooseUs = () => {
 
   return (
     <section className="mt-28 mx-5">
-      <div className="flex flex-col items-center">
-        <h1 className="text-3xl md:text-5xl font-semibold my-6">
-          Why Choose Family Clinic?
-        </h1>
-        <Image
-          src="/images/section-img.png"
-          alt="section image"
-          width={50}
-          height={50}
-          className="my-4"
-        />
-        <p className="text-[#abaaab] text-center max-w-2xl mx-auto my-6 text-lg lg:text-xl">
-          Our mission is to deliver holistic healthcare that supports families
+      <SectionHeader
+        title="Why Choose Family Clinic?"
+        subtitle={`Our mission is to deliver holistic healthcare that supports families
           through every stage of life. We partner with local healthcare
           providers, employers, and insurance companies to create a seamless
-          care experience for our patients.
-        </p>
-      </div>
+          care experience for our patients.`}
+        imageSrc="/images/section-img.png"
+      />
 
       <div className="w-full py-16 px-4 sm:px-6 lg:px-8 ">
         <div className="max-w-4xl mx-auto">
@@ -40,8 +30,6 @@ export const WhyChooseUs = () => {
             </h2>
             <div className="w-16 h-1 bg-[#1a76d1]"></div>
           </div>
-
-          
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map((feature, index) => (
@@ -56,14 +44,12 @@ export const WhyChooseUs = () => {
                   </svg>
                 </div>
 
-                <p className="text-lg leading-relaxed">
-                  {feature}
-                </p>
+                <p className="text-lg leading-relaxed">{feature}</p>
               </div>
             ))}
             <Button className="p-5 w-44 bg-[#1a76d1] rounded-xs">
-              Learn More 
-              <FaArrowRight/>
+              Learn More
+              <FaArrowRight />
             </Button>
           </div>
         </div>

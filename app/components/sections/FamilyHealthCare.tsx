@@ -1,8 +1,9 @@
 import React from "react";
-import Image from "next/image";
+// Image is rendered by SectionHeader when needed
 import { FaAmbulance } from "react-icons/fa";
 import { IoBodySharp } from "react-icons/io5";
 import { LuPipette } from "react-icons/lu";
+import SectionHeader from "@/app/components/features/SectionHeader";
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -15,8 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
 }) => (
-  <div className="flex flex-col justify-center items-center mx-4"  
-    >
+  <div className="flex flex-col justify-center items-center mx-4">
     <div className="w-32 h-32 rounded-full flex justify-center items-center border border-gray-300 hover:text-white hover:bg-[#1a76d1] bg-white">
       {icon}
     </div>
@@ -54,34 +54,20 @@ export const FamilyHealthCare: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white mt-32  ">
-      <div className="flex flex-col items-center">
-        <h1 className="text-2xl md:text-5xl text-center font-semibold my-6">
-          Comprehensive Family HealthCare
-        </h1>
-        <Image
-          src="/images/section-img.png"
-          alt="section image"
-          width={50}
-          height={50}
-          className="my-4"
-        />
-        <p className="text-[#abaaab] text-center px-5 lg:px-0 max-w-2xl mx-auto my-6 text-base lg:text-xl">
-          Our team is dedicated to providing exceptional, compassionate care for
-          you and your loved ones. Whether you need emergency attention,
-          medication support, or ongoing treatment, Family Clinic ensures your
-          well-being is always our top priority.
-        </p>
-      </div>
+    <section className="bg-white mt-32">
+      <SectionHeader
+        title="Comprehensive Family HealthCare"
+        subtitle={`Our team is dedicated to providing exceptional, compassionate care for
+                    you and your loved ones. Whether you need emergency attention,
+                    medication support, or ongoing treatment, Family Clinic ensures your
+                    well-being is always our top priority.`}
+        imageSrc="/images/section-img.png"
+      />
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center mt-20 gap-24">
           {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              {...service}
-              
-            />
+            <ServiceCard key={index} {...service} />
           ))}
         </div>
       </div>
