@@ -18,7 +18,7 @@ export default function SectionHeader({
 }: SectionHeaderProps) {
   return (
     <div className={center ? "flex flex-col items-center" : ""}>
-      <h1 className="text-3xl md:text-5xl font-semibold my-6 text-center">
+      <h1 className="text-2xl md:text-5xl font-semibold my-6 text-center">
         {title}
       </h1>
       {imageSrc && (
