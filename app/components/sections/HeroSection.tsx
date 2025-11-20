@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { GoArrowRight } from "react-icons/go";
+import Link from "next/link";
 
 const cards = [
   {
@@ -26,7 +27,6 @@ const cards = [
 export default function HeroSection() {
   return (
     <section>
-     
       <div className="relative w-full h-[650px] overflow-hidden">
         <Image
           src="/images/interior.jpg"
@@ -36,10 +36,8 @@ export default function HeroSection() {
           priority
         />
 
-        
         <div className="absolute inset-0 bg-linear-to-r from-[#1a76d1]/30 via-[#1a76d1]/20 to-transparent" />
 
-     
         <div className="absolute inset-0 flex items-center lg:ml-10 mb-24 z-10">
           <div className="container mx-auto px-6">
             <div className="max-w-2xl text-gray-800">
@@ -55,9 +53,11 @@ export default function HeroSection() {
                 At Family Clinic, we provide compassionate care for families
                 across Maryland.
               </p>
-              <Button className="p-7 mt-10 w-72 bg-[#1a76d1] text-white rounded-[3px] text-lg font-semibold">
-                Book Appointment
-              </Button>
+              <Link href="/appointment">
+                <Button className="p-7 mt-10 w-72 bg-[#1a76d1] text-white rounded-[3px] text-lg font-semibold">
+                  Book Appointment
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -87,7 +87,6 @@ export default function HeroSection() {
               </div>
 
               <div className="relative z-10">
-                
                 <h3 className="text-2xl font-bold mb-4 leading-tight">
                   {card.title}
                 </h3>
@@ -105,7 +104,6 @@ export default function HeroSection() {
           ))}
         </div>
       </div>
-
     </section>
   );
 }

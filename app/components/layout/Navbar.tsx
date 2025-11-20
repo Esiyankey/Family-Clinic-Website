@@ -16,7 +16,7 @@ export const Navbar = () => {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Insurance and Billing", href: "/insurance-and-billing" },
-    { name: "Appointments", href: "/appointments" },
+    { name: "Appointments", href: "/appointment" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -75,7 +75,7 @@ export const Navbar = () => {
           <div className="flex gap-12 items-center">
             <div className="hidden  lg:flex gap-12 mr-16">
               {links.map((link) => {
-                const isActiveLink = pathname === link.href || link.href.startsWith(pathname);
+                const isActiveLink = pathname === link.href ;
                 return (
                   <Link
                     key={link.name}
@@ -96,11 +96,11 @@ export const Navbar = () => {
                 );
               })}
             </div>
-            <div className="hidden  lg:flex mr-12">
+            <Link href="/appointment" className="hidden  lg:flex mr-12">
               <Button className="p-7  bg-[#1a76d1] text-white rounded-[3px] text-lg font-semibold">
                 Book Appointment
               </Button>
-            </div>
+            </Link>
           </div>
 
           <div className="lg:hidden" onClick={() => setShowMenu(!showMenu)}>
@@ -121,9 +121,11 @@ export const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button className="p-6 bg-[#1a76d1] rounded-sm w-full text-lg">
+              <Link href="/appointment" className="w-full mt-4">
+              <Button className="p-6 bg-[#1a76d1] rounded-sm text-lg">
                 Book Appointment
               </Button>
+            </Link>
             </div>
           )}
         </div>
