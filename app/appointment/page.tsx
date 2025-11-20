@@ -110,7 +110,7 @@ export default function AppointmentsPage() {
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
               <div
                 className="calendly-inline-widget"
-                data-url="https://calendly.com/familyclinic-info/30min"
+                data-url="https://calendly.com/d/cthm-fkf-dkz"
                 style={{ minWidth: "320px", height: "700px" }}
               ></div>
               <script

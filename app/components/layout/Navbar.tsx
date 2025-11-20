@@ -7,6 +7,7 @@ import { HiMail } from "react-icons/hi";
 import { IoMdMenu } from "react-icons/io";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { FaX } from "react-icons/fa6";
 
 export const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -75,12 +76,16 @@ export const Navbar = () => {
           <div className="flex gap-12 items-center">
             <div className="hidden  lg:flex gap-12 mr-16">
               {links.map((link) => {
-                const isActiveLink = pathname === link.href ;
+                const isActiveLink = pathname === link.href;
                 return (
                   <Link
                     key={link.name}
                     href={link.href}
-                    className={` ${isActiveLink ? "text-[#1a76d1] border-b-[3px] border-b-blue-600" : ""}  relative inline-block 
+                    className={` ${
+                      isActiveLink
+                        ? "text-[#1a76d1] border-b-[3px] border-b-blue-600"
+                        : ""
+                    }  relative inline-block 
       after:content-[''] after:absolute after:left-0 after:bottom-0 
       after:h-[3px] after:w-full 
       after:bg-linear-to-r after:from-blue-500 after:to-blue-600
@@ -89,7 +94,6 @@ export const Navbar = () => {
       hover:after:scale-x-100
       focus:after:scale-x-100
     text-lg font-medium hover:text-[#1a76d1] transition-ease-in-out`}
-     
                   >
                     {link.name}
                   </Link>
@@ -104,30 +108,43 @@ export const Navbar = () => {
           </div>
 
           <div className="lg:hidden" onClick={() => setShowMenu(!showMenu)}>
-            <IoMdMenu
-              size={36}
-              className="fill-current text-[#4891da] mr-2"
-              fill="currentColor"
-            />
+            {showMenu ? (
+              <FaX
+                size={15}
+                className="fill-current text-[#4891da] mr-2"
+                fill="currentColor"
+              />
+            ) : (
+              <IoMdMenu
+                size={20}
+                className="fill-current text-[#4891da] mr-2"
+                fill="currentColor"
+              />
+            )}
           </div>
-          {showMenu && (
-            <div className=" absolute top-24 transition-all  z-20 bg-white w-full py-1 justify-start items-start px-8 flex flex-col gap-4 lg:hidden ">
-              {links.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-xl font-light  border-b-2 border-transparent hover:border-blue-500 transition "
-                >
-                  {link.name}
-                </a>
-              ))}
-              <Link href="/appointment" className="w-full mt-4">
+
+          <div
+            className={`absolute top-20 left-0 w-full z-20 bg-white 
+    overflow-hidden transition-all duration-500 ease-in-out
+    ${showMenu ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
+    py-4 px-8 flex flex-col gap-4 lg:hidden`}
+          >
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-xl font-light border-transparent transition"
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            <Link href="/appointment" className="w-full mt-4">
               <Button className="p-6 bg-[#1a76d1] rounded-sm text-lg">
                 Book Appointment
               </Button>
             </Link>
-            </div>
-          )}
+          </div>
         </div>
       </div>
     </nav>

@@ -67,6 +67,8 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card, index) => (
             <div
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
               key={index}
               className="relative lg:w-88 bg-[#1a76d1] h-56 text-white p-8 rounded-sm shadow-xl hover:shadow-2xl transition-all overflow-hidden group"
             >
