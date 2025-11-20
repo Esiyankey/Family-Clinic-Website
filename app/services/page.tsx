@@ -1,44 +1,12 @@
 
 
 'use client';
-import { FaClipboardList, FaTooth, FaHeart, FaHeartPulse, FaEye } from 'react-icons/fa6';
 import HeroHeader from "../components/features/HeroHeader";
 import Image from "next/image";
 import ServicesGrid from '../components/features/ServicesGrid';
-
+import { servicesData as services } from '../../lib/data/servicesData';
 const page = () => {
- const services = [
-    {
-      icon: FaClipboardList,
-      title: 'General Treatment',
-      description: 'Expert care and comprehensive treatment plans to ensure your well-being.',
-    },
-    {
-      icon: FaTooth,
-      title: 'Teeth Whitening',
-      description: 'Brighten your smile with our advanced teeth whitening services.',
-    },
-    {
-      icon: FaHeart,
-      title: 'Heart Surgery',
-      description: 'Advanced heart surgery techniques for a healthier heart.',
-    },
-    {
-      icon: FaHeartPulse,
-      title: 'Ear Treatment',
-      description: 'Effective treatments for various ear conditions and hearing issues.',
-    },
-    {
-      icon: FaEye,
-      title: 'Vision Problems',
-      description: 'Comprehensive eye care to address and correct vision problems.',
-    },
-    {
-      icon: FaEye,
-      title: 'Blood Transfusion',
-      description: 'Safe and efficient blood transfusion services for your health needs.',
-    },
-  ];
+ 
 
 
   return (

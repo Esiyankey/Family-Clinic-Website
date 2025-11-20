@@ -5,8 +5,12 @@ import { useEffect, useState } from "react";
 import { ImPhone } from "react-icons/im";
 import { HiMail } from "react-icons/hi";
 import { IoMdMenu } from "react-icons/io";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export const Navbar = () => {
+  const [scrollY, setScrollY] = useState(0);
+  const [showMenu, setShowMenu] = useState(false);
   const links = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -15,8 +19,8 @@ export const Navbar = () => {
     { name: "Appointments", href: "/appointments" },
     { name: "Contact", href: "/contact" },
   ];
-  const [scrollY, setScrollY] = useState(0);
-  const [showMenu, setShowMenu] = useState(false);
+
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +33,7 @@ export const Navbar = () => {
   }, []);
   return (
     <nav>
-      <div className="lg:flex-row mr-3 flex-col flex lg:justify-between items-end lg:items-center max-w-5/6 lg:mx-auto py-2 lg:py-4">
+      <div className="lg:flex-row mr-3 flex-col flex lg:justify-between items-end lg:items-center lg:max-w-5/6 lg:mx-auto py-2 lg:py-4">
         <div className="flex items-center gap-2 lg:gap-5">
           <div className="hidden lg:flex gap-2 items-center">
             <ImPhone
@@ -41,11 +45,15 @@ export const Navbar = () => {
           </div>
           <div className="flex gap-2 items-center">
             <HiMail size={20} className="text-[#1a76d1]" />
-            <span className="text-lg hover:text-[#1a76d1] cursor-pointer">info@familyclinic.com</span>
+            <span className="text-lg hover:text-[#1a76d1] cursor-pointer">
+              info@familyclinic.com
+            </span>
           </div>
         </div>
         <div>
-          <span className="hover:text-[#1a76d1] text-lg cursor-pointer">admin login</span>
+          <span className="hover:text-[#1a76d1] text-lg cursor-pointer">
+            admin login
+          </span>
         </div>
       </div>
       <div className="w-full h-0.5 bg-[#eeeeee]"></div>
@@ -55,7 +63,7 @@ export const Navbar = () => {
           scrollY > 40 ? "fixed top-0 w-full z-50 shadow-sm" : "relative "
         } `}
       >
-        <div className="flex  justify-between items-center  max-w-5/6 mx-auto py-4">
+        <div className="flex  justify-between items-center  max-w-5/6 mx-auto  lg:py-4">
           <div>
             <Image
               src="/images/family_clinic_logo.png"
@@ -65,16 +73,28 @@ export const Navbar = () => {
             />
           </div>
           <div className="flex gap-12 items-center">
-            <div className="hidden   lg:flex gap-12 mr-16">
-              {links.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-lg font-normal  transition-ease-in-out "
-                >
-                  {link.name}
-                </a>
-              ))}
+            <div className="hidden  lg:flex gap-12 mr-16">
+              {links.map((link) => {
+                const isActiveLink = pathname === link.href || link.href.startsWith(pathname);
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className={` ${isActiveLink ? "text-[#1a76d1] border-b-[3px] border-b-blue-600" : ""}  relative inline-block 
+      after:content-[''] after:absolute after:left-0 after:bottom-0 
+      after:h-[3px] after:w-full 
+      after:bg-linear-to-r after:from-blue-500 after:to-blue-600
+      after:origin-left after:scale-x-0
+      after:transition-transform after:duration-300 
+      hover:after:scale-x-100
+      focus:after:scale-x-100
+    text-lg font-medium hover:text-[#1a76d1] transition-ease-in-out`}
+     
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
             </div>
             <div className="hidden  lg:flex mr-12">
               <Button className="p-7  bg-[#1a76d1] text-white rounded-[3px] text-lg font-semibold">
@@ -85,13 +105,13 @@ export const Navbar = () => {
 
           <div className="lg:hidden" onClick={() => setShowMenu(!showMenu)}>
             <IoMdMenu
-              size={24}
+              size={36}
               className="fill-current text-[#4891da] mr-2"
               fill="currentColor"
             />
           </div>
           {showMenu && (
-            <div className=" absolute top-16 transition-all  z-20 bg-white w-full py-1 justify-start items-start px-8 flex flex-col gap-4 lg:hidden ">
+            <div className=" absolute top-24 transition-all  z-20 bg-white w-full py-1 justify-start items-start px-8 flex flex-col gap-4 lg:hidden ">
               {links.map((link) => (
                 <a
                   key={link.name}
