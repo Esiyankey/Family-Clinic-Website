@@ -1,3 +1,5 @@
+import { GoTriangleRight } from "react-icons/go";
+
 interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -22,7 +24,7 @@ export default function HeroHeader({ title, breadcrumbs }: HeroHeaderProps) {
       <div className="absolute inset-0 bg-blue-800 opacity-40" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white text-balance mb-4">
+        <h1 className="text-5xl md:text-6xl font-bold text-white text-balance mb-4">
           {title}
         </h1>
         <nav className="flex justify-center font-semibold items-center gap-2 mb-6 text-white  text-lg md:text-xl ">
@@ -39,13 +41,13 @@ export default function HeroHeader({ title, breadcrumbs }: HeroHeaderProps) {
                 <span>{item.label}</span>
               )}
               {index < breadcrumbs.length - 1 && (
-                <span className="text-white opacity-75 font-bold">{">"}</span>
+                <span className="text-white opacity-75 font-bold">
+                  <GoTriangleRight />
+                </span>
               )}
             </div>
           ))}
         </nav>
-
-      
       </div>
     </div>
   );

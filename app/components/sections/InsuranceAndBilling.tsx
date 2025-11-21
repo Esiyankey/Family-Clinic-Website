@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { CgClose } from "react-icons/cg";
 import SectionHeader from "@/app/components/features/SectionHeader";
 import Link from "next/link";
-import { link } from "fs";
+
 
 const plans = [
   {
@@ -78,8 +78,11 @@ export const InsuranceAndBilling = () => {
                 ))}
               </ul>
 
-              <Link href={plan.link} className="mt-8 bg-[#4891da] hover:bg-[#1a76d1] text-lg text-white rounded-sm w-full px-6 py-5">
+              <Link href={plan.link} className="w-full">
+                <Button className="mt-8 bg-[#4891da] hover:bg-[#1a76d1] text-lg text-white rounded-sm w-full px-6 py-5">
+
                 {plan.button}
+                </Button>
               </Link>
             </div>
           ))}

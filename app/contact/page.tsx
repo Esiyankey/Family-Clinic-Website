@@ -83,8 +83,8 @@ export default function ContactPage() {
               <FaPhone className="text-3xl" />
             </div>
             <div className="flex flex-col text-xl">
-              <span className="text-2xl font-semibold">0256778060</span>
-              <span>info@company.com</span>
+              <span className="text-2xl font-semibold">+240-790-8309</span>
+              <span>info@familyclinic.clinic</span>
             </div>
           </div>
           <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-12 items-center">
@@ -92,8 +92,8 @@ export default function ContactPage() {
               <FiMapPin className="text-3xl" />
             </div>
             <div className="flex flex-col text-xl">
-              <span className="text-2xl font-semibold">0256778060</span>
-              <span>info@company.com</span>
+              <span className="text-2xl font-semibold">7525 Greenway Center Drive</span>
+              <span> Greenbelt, MD 20770</span>
             </div>
           </div>
           <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-12 items-center">
@@ -101,8 +101,8 @@ export default function ContactPage() {
               <FiClock className="text-3xl" />
             </div>
             <div className="flex flex-col text-xl">
-              <span className="text-2xl font-semibold">0256778060</span>
-              <span>info@company.com</span>
+              <span className="text-2xl font-semibold">+240-790-8309</span>
+              <span>info@familyclinic.clinic</span>
             </div>
           </div>
         </div>

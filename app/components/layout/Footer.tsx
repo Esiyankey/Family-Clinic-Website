@@ -6,31 +6,38 @@ import { HiMail } from "react-icons/hi";
 import { ImPhone } from "react-icons/im";
 
 export default function Footer() {
+  const navLinks = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Services", link: "/services" },
+    { name: "Insurance and Billing", link: "/insurance-and-billing" },
+    { name: "Appointments", link: "/appointment" },
+    { name: "Contact", link: "/contact" },
+  ];
+
   return (
     <footer className="bg-[#176abc] text-white">
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-
-       
           <div>
-            <h3 className=" mb-4 pb-3 border-b-2 border-white w-fit">
+            <h3 className=" text-2xl mb-4 pb-3 border-b-2 border-white w-fit">
               Quick Links
             </h3>
             <nav className="space-y-3">
-              {["Home", "About Us", "Services", "Appointments", "Contact"].map(
-                (item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <span className="text-blue-300">›</span>
-                    <Link href="#" className="hover:text-blue-100 transition-colors">
-                      {item}
-                    </Link>
-                  </div>
-                )
-              )}
+              {navLinks.map((item, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <span className="text-blue-300">›</span>
+                  <Link
+                    href={item.link}
+                    className="hover:text-blue-100 transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </div>
+              ))}
             </nav>
           </div>
 
-         
           <div>
             <h3 className="text-2xl font-bold mb-4 pb-3 border-b-2 border-white w-fit">
               Resources
@@ -39,7 +46,10 @@ export default function Footer() {
               {["FAQ", "Privacy Policy"].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <span className="text-blue-300">›</span>
-                  <Link href="#" className="hover:text-blue-100 transition-colors">
+                  <Link
+                    href="#"
+                    className="hover:text-blue-100 transition-colors"
+                  >
                     {item}
                   </Link>
                 </div>
@@ -47,34 +57,37 @@ export default function Footer() {
             </nav>
           </div>
 
-         
           <div>
-            <h3 className=" mb-4 pb-3 border-b-2 border-white w-fit">
+            <h3 className=" text-2xl mb-4 pb-3 border-b-2 border-white w-fit">
               Contact Info
             </h3>
 
             <div className="space-y-6 text-blue-50">
-              
               <div className="flex items-start gap-3">
                 <BiMapPin size={20} className="shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold mb-1 text-white">Address</p>
-                  <p>7525 GreenWay Center Drive<br />Greenbelt, MD 20770</p>
+                  <p>
+                    7525 GreenWay Center Drive
+                    <br />
+                    Greenbelt, MD 20770
+                  </p>
                 </div>
               </div>
 
-             
               <div className="flex items-start gap-3">
                 <ImPhone size={20} className="shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold mb-1 text-white">Phone</p>
-                  <Link href="tel:" className="hover:text-white transition-colors">
-                    Available upon request
+                  <Link
+                    href="tel:"
+                    className="hover:text-white transition-colors"
+                  >
+                    240-790-8309 / 240-790-8432
                   </Link>
                 </div>
               </div>
 
-             
               <div className="flex items-start gap-3">
                 <HiMail size={20} className="shrink-0 mt-1" />
                 <div>
@@ -89,7 +102,6 @@ export default function Footer() {
               </div>
             </div>
 
-          
             <div className="flex gap-4 mt-6">
               <Link
                 href="#"
