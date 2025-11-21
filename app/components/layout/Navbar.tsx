@@ -141,6 +141,7 @@ export const Navbar = () => {
                         ? "text-[#1a76d1] border-b-2 border-b-[#1a76d1]"
                         : ""
                     }text-xl font-light border-transparent transition`}
+                    onClick={()=>setShowMenu(!showMenu)}
                 >
                   {link.name}
                 </Link>

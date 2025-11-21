@@ -17,7 +17,7 @@ export default function AboutUsSection() {
        
 
         <div>
-          <p className="text-[#1a76d1] text-lg md:text-4xl font-semibold mb-2">ABOUT US</p>
+          <p className="text-[#1a76d1] text-xl md:text-4xl font-semibold mb-2">ABOUT US</p>
 
           <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight mb-4">
             Providing Quality Family Healthcare For Over Years
@@ -67,19 +67,19 @@ export default function AboutUsSection() {
       
       <div className="max-w-7xl pb-24 mx-auto grid  grid-cols-1 md:grid-cols-2 gap-12 px-6 mt-32 items-center">
         <div>
-          <h3 className="text-2xl md:text-4xl font-bold mb-6 text-gray-900">Our Mission & Vision</h3>
+          <h3 className="text-xl md:text-4xl font-bold mb-6 text-gray-900">Our Mission & Vision</h3>
 
           <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">
-            <span className="font-semibold text-[#1a76d1] text-xl md:text-2xl">Our Mission:</span> To deliver affordable,
+            <span className="font-semibold text-[#1a76d1] text-lg md:text-2xl">Our Mission:</span> To deliver affordable,
             compassionate, and holistic medical care that empowers families to live healthier lives.
           </p>
 
           <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
-            <span className="font-semibold text-[#1a76d1] text-xl md:text-2xl">Our Vision:</span> A healthier community
+            <span className="font-semibold text-[#1a76d1] text-lg md:text-2xl">Our Vision:</span> A healthier community
             where every patient has access to timely, quality healthcare — both in-person and online.
           </p>
 
-          <h4 className=" font-semibold mb-4 text-xl md:text-2xl text-gray-900">Our Values</h4>
+          <h4 className=" font-semibold mb-4 text-lg md:text-2xl text-gray-900">Our Values</h4>
 
           <ul className="space-y-3 text-gray-700 text-lg">
             {["Compassion", "Integrity", "Excellence", "Community"].map((item, idx) => (

@@ -10,7 +10,7 @@ export const ContactSection = () => {
         <h1 className="text-2xl md:text-4xl lg:text-5xl max-w-3xl text-center font-bold my-4 text-white">
           Do you need Emergency Medical Care? Call @{" "}
         </h1>
-        <p className="text-base md:text-xl text-center my-4 font-semibold text-white max-w-2xl ">
+        <p className="text-base md:text-xl text-center px-6 my-4 font-semibold text-white max-w-2xl ">
           If you or a loved one requires urgent medical care, our team is ready
           to assist you 24/7. Call us immediately for expert help.
         </p>

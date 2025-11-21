@@ -71,7 +71,7 @@ export const FamilyHealthCare: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white mt-32">
+    <section className="bg-white mt-32 px-6">
       <SectionHeader
         title="Comprehensive Family HealthCare"
         subtitle={`Our team is dedicated to providing exceptional, compassionate care for

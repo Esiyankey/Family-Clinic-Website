@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className=" text-2xl mb-4 pb-3 border-b-2 border-white w-fit">
+            <h3 className=" text-xl mb-4 pb-3 border-b-2 border-white w-fit">
               Quick Links
             </h3>
             <nav className="space-y-3">
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-4 pb-3 border-b-2 border-white w-fit">
+            <h3 className="text-xl font-bold mb-4 pb-3 border-b-2 border-white w-fit">
               Resources
             </h3>
             <nav className="space-y-3">
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className=" text-2xl mb-4 pb-3 border-b-2 border-white w-fit">
+            <h3 className=" text-xl mb-4 pb-3 border-b-2 border-white w-fit">
               Contact Info
             </h3>
 
