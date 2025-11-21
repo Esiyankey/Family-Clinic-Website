@@ -103,7 +103,7 @@ export default function ContactPage() {
                   7525 Greenway Center Drive
                 </span>
                 
-                <span className="mt-4 font-bold text-red-500">Get Directions <FaInfoCircle/> </span>
+                <span className="mt-4 font-bold text-red-500 flex gap-2">Get Directions <FaInfoCircle/> </span>
               </div>
             </div>
           </Link>
