@@ -79,7 +79,7 @@ export default function ContactPage() {
       />
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 px-6 lg:grid-cols-3 gap-12 mb-12">
-          <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-12 items-center">
+          <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-6 items-center">
             <div>
               <FaPhone className="text-3xl" />
             </div>
@@ -92,9 +92,8 @@ export default function ContactPage() {
             href="https://www.google.com/maps/search/?api=1&query=7525+Greenway+Center+Drive,+Greenbelt,+MD+20770"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-12 items-center hover:bg-[#1565b8] transition-colors cursor-pointer"
           >
-            <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-12 items-center">
+            <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-6 items-center">
               <div>
                 <FiMapPin className="text-3xl" />
               </div>
@@ -103,16 +102,15 @@ export default function ContactPage() {
                   7525 Greenway Center Drive
                 </span>
                 <span> Greenbelt, MD 20770</span>
-                <span>Get Directions</span>
+                <span className="mt-4">Get Directions</span>
               </div>
-
             </div>
           </Link>
-          <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-12 items-center">
+          <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-6 items-center">
             <div>
               <FiClock className="text-3xl" />
             </div>
-            <div className="flex flex-co text-lg  md:text-xl">
+            <div className="flex flex-col text-lg  md:text-xl">
               <span className="text-2xl font-semibold">+240-790-8309</span>
               <span>info@familyclinic.clinic</span>
             </div>
