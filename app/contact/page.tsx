@@ -6,7 +6,7 @@ import { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { FiClock, FiMapPin } from "react-icons/fi";
 import Link from "next/link";
-import { BsInfo } from "react-icons/bs";
+import { FaInfoCircle } from "react-icons/fa";
 
 export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false);
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   7525 Greenway Center Drive
                 </span>
                 
-                <span className="mt-4 text-red-500">Get Directions <BsInfo/> </span>
+                <span className="mt-4 font-bold text-red-500">Get Directions <FaInfoCircle/> </span>
               </div>
             </div>
           </Link>
