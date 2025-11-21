@@ -31,7 +31,7 @@ export default function SectionHeader({
         />
       )}
       {subtitle && (
-        <p className="text-[#abaaab] text-center max-w-2xl mx-auto my-6 text-lg lg:text-xl">
+        <p className="text-[#abaaab] text-center max-w-2xl mx-auto my-6 text-base md:text-lg lg:text-xl">
           {subtitle}
         </p>
       )}

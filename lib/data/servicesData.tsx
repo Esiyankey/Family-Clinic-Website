@@ -82,8 +82,8 @@ export const servicesData = [
   {
     id: 4,
     icon: FaLeaf,
-    title: "Wellness & Lifestyle Programs",
-    slug: "wellness-lifestyle-programs",
+    title: "Wellness Programs",
+    slug: "wellness-programs",
     description: "Personalized guidance on nutrition, exercise, and stress management.",
     longDescription:
       "Our Wellness & Lifestyle Programs help patients build healthier habits through expert-led coaching. We focus on nutrition planning, fitness guidance, weight management, sleep improvement, and stress reduction strategies. These programs help reduce chronic disease risk and improve long-term wellness.",

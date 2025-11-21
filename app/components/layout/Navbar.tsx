@@ -71,6 +71,7 @@ export const Navbar = () => {
               width={80}
               height={80}
               alt="logo-here"
+              className=" sm:w-16 sm:h-16 md:w-20 md:h-20"
             />
           </div>
           <div className="flex gap-12 items-center">
@@ -107,17 +108,17 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          <div className="lg:hidden" onClick={() => setShowMenu(!showMenu)}>
+          <div className="lg:hidden cursor-pointer h-10 w-10 rounded-sm border flex items-center justify-center" onClick={() => setShowMenu(!showMenu)} >
             {showMenu ? (
               <FaX
-                size={15}
-                className="fill-current text-[#4891da] mr-2"
+                size={18}
+                className="fill-current text-[#4891da] "
                 fill="currentColor"
               />
             ) : (
               <IoMdMenu
-                size={20}
-                className="fill-current text-[#4891da] mr-2"
+                size={23}
+                className="fill-current text-[#4891da] "
                 fill="currentColor"
               />
             )}

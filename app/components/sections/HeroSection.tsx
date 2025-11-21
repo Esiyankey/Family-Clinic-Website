@@ -40,8 +40,8 @@ export default function HeroSection() {
 
         <div className="absolute inset-0 flex items-center lg:ml-10 mb-24 z-10">
           <div className="container mx-auto px-6">
-            <div className="max-w-2xl text-gray-800">
-              <h2 className="text-lg md:text-xl text-[#1a76d1] mb-2">
+            <div className="max-w-2xl mt-32 md:mt-0 text-gray-800">
+              <h2 className="text-lg  md:text-xl text-[#1a76d1] mb-2">
                 Your Partner in Health & Wellness
               </h2>
 
