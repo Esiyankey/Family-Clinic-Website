@@ -29,7 +29,7 @@ export default function HeroSection() {
     <section>
       <div className="relative w-full h-[650px] overflow-hidden">
         <Image
-          src="/images/interior.jpg"
+          src="/images/doctor.jpg"
           alt="Family Clinic"
           fill
           className="object-cover"

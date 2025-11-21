@@ -34,7 +34,7 @@ export const Navbar = () => {
   }, []);
   return (
     <nav>
-      <div className="lg:flex-row mr-3 flex-col flex lg:justify-between items-end lg:items-center lg:max-w-5/6 lg:mx-auto py-2 lg:py-4">
+      <div className="lg:flex-row mr-3 flex-col flex lg:justify-between items-end lg:items-center lg:max-w-5/6 lg:mx-auto py-1 lg:py-3">
         <div className="flex items-center gap-2 lg:gap-5">
           <div className="hidden lg:flex gap-2 items-center">
             <ImPhone
@@ -42,17 +42,17 @@ export const Navbar = () => {
               className="fill-current text-[#1a76d1]"
               fill="currentColor"
             />
-            <span className="text-lg">+1 (555) 123-4567</span>
+            <span className="text-sm md:text-lg">+1 (555) 123-4567</span>
           </div>
           <div className="flex gap-2 items-center">
             <HiMail size={20} className="text-[#1a76d1]" />
-            <span className="text-lg hover:text-[#1a76d1] cursor-pointer">
+            <span className="text-sm md:text-lg hover:text-[#1a76d1] cursor-pointer">
               info@familyclinic.com
             </span>
           </div>
         </div>
         <div>
-          <span className="hover:text-[#1a76d1] text-lg cursor-pointer">
+          <span className="hover:text-[#1a76d1] text-sm md:text-lg cursor-pointer">
             admin login
           </span>
         </div>
@@ -64,7 +64,7 @@ export const Navbar = () => {
           scrollY > 40 ? "fixed top-0 w-full z-50 shadow-sm" : "relative "
         } `}
       >
-        <div className="flex  justify-between items-center  max-w-5/6 mx-auto  lg:py-4">
+        <div className="flex  justify-between items-center  max-w-5/6 mx-auto   lg:py-2">
           <div>
             <Image
               src="/images/family_clinic_logo.png"
