@@ -12,7 +12,7 @@ export const ContactSection = () => {
         </h1>
         <p className="text-base md:text-xl text-center px-6 my-4 font-semibold text-white max-w-2xl ">
           If you or a loved one requires urgent medical care, our team is ready
-          to assist you 24/7. Call us immediately for expert help.
+          to assist you. Call us immediately for expert help.
         </p>
         <div className="my-6 flex gap-4">
           <Link href="/contact">
