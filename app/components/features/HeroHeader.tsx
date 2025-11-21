@@ -11,7 +11,7 @@ interface HeroHeaderProps {
 export default function HeroHeader({ title, breadcrumbs }: HeroHeaderProps) {
   return (
     <div
-      className="relative w-full py-36 from-blue-400 to-blue-700 bg-linear-to-b overflow-hidden"
+      className="relative w-full py-28 md:py-36 from-[#7fbbf6]  to-[#1a76d1]  bg-linear-to-b overflow-hidden"
       style={{
         backgroundImage: `url('/images/clinic_image.jpg')`,
         backgroundSize: "cover",
@@ -19,7 +19,7 @@ export default function HeroHeader({ title, breadcrumbs }: HeroHeaderProps) {
         backgroundBlendMode: "overlay",
       }}
     >
-      <div className="absolute inset-0 bg-blue-800 opacity-60" />
+      <div className="absolute inset-0 bg-blue-800 opacity-40" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white text-balance mb-4">

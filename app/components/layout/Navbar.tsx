@@ -83,11 +83,11 @@ export const Navbar = () => {
                     href={link.href}
                     className={` ${
                       isActiveLink
-                        ? "text-[#1a76d1] border-b-[3px] border-b-blue-600"
+                        ? "text-[#1a76d1] border-b border-b-[#1a76d1]"
                         : ""
                     }  relative inline-block 
       after:content-[''] after:absolute after:left-0 after:bottom-0 
-      after:h-[3px] after:w-full 
+      after:h-0.5 after:w-full 
       after:bg-linear-to-r after:from-blue-500 after:to-blue-600
       after:origin-left after:scale-x-0
       after:transition-transform after:duration-300 
@@ -129,15 +129,22 @@ export const Navbar = () => {
     ${showMenu ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
     py-4 px-8 flex flex-col gap-4 lg:hidden`}
           >
-            {links.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-xl font-light border-transparent transition"
-              >
-                {link.name}
-              </Link>
-            ))}
+            {links.map((link) => {
+              const isActiveLink = pathname === link.href;
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={` ${
+                      isActiveLink
+                        ? "text-[#1a76d1] border-b-2 border-b-[#1a76d1]"
+                        : ""
+                    }text-xl font-light border-transparent transition`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
 
             <Link href="/appointment" className="w-full mt-4">
               <Button className="p-6 bg-[#1a76d1] rounded-sm text-lg">

@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa6";
 import SectionHeader from "@/app/components/features/SectionHeader";
+import Link from "next/link";
 export const WhyChooseUs = () => {
   const features = [
     "Experienced, family-focused healthcare team",
@@ -47,10 +48,12 @@ export const WhyChooseUs = () => {
                 <p className="text-lg leading-relaxed">{feature}</p>
               </div>
             ))}
+            <Link href="/about">
             <Button className="p-5 w-44 bg-[#1a76d1] rounded-xs">
               Learn More
               <FaArrowRight />
             </Button>
+            </Link>
           </div>
         </div>
       </div>

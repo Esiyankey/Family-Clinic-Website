@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -14,13 +15,17 @@ export const ContactSection = () => {
           to assist you 24/7. Call us immediately for expert help.
         </p>
         <div className="my-6 flex gap-4">
-          <Button className="bg-white text-[#1a76d1] hover:border hover:border-white hover:bg-[#1a76d1] hover:text-white p-6 rounded-sm text-base font-semibold">
-            Contact Now
-          </Button>
-          <Button className="border border-white bg-transparent text-white p-6 rounded-sm text-base font-semibold">
-            Learn More
-            <BsArrowRight className="ml-2" />
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-white text-[#1a76d1] hover:border hover:border-white hover:bg-[#1a76d1] hover:text-white p-6 rounded-sm text-base font-semibold">
+              Contact Now
+            </Button>
+          </Link>
+          <Link href="/appointment">
+            <Button className="border border-white bg-transparent text-white p-6 rounded-sm text-base font-semibold">
+              Learn More
+              <BsArrowRight className="ml-2" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

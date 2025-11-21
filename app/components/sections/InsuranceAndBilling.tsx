@@ -4,6 +4,8 @@ import { BsCreditCard } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
 import { CgClose } from "react-icons/cg";
 import SectionHeader from "@/app/components/features/SectionHeader";
+import Link from "next/link";
+import { link } from "fs";
 
 const plans = [
   {
@@ -16,6 +18,7 @@ const plans = [
       { text: "Help with claim submission and coordination", available: true },
     ],
     button: "View Accepted Plans",
+    link: "/insurance-and-billing"
   },
   {
     icon: <BsCreditCard className="w-12 h-12 text-[#1a76d1] mx-auto" />,
@@ -29,7 +32,8 @@ const plans = [
         available: true,
       },
     ],
-    button: "Contact Billing Office",
+    button: "Contact Us",
+    link: "/contact"
   },
 ];
 
@@ -74,9 +78,9 @@ export const InsuranceAndBilling = () => {
                 ))}
               </ul>
 
-              <Button className="mt-8 bg-[#4891da] hover:bg-[#1a76d1] text-lg text-white rounded-sm w-full px-6 py-5">
+              <Link href={plan.link} className="mt-8 bg-[#4891da] hover:bg-[#1a76d1] text-lg text-white rounded-sm w-full px-6 py-5">
                 {plan.button}
-              </Button>
+              </Link>
             </div>
           ))}
         </div>

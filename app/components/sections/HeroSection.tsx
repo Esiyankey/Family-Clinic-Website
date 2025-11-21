@@ -7,15 +7,15 @@ import Link from "next/link";
 
 const cards = [
   {
-    title: "Annual Checkups",
+    title: "Annual Physicals",
     description: "Stay on top of your health with routine exams.",
   },
   {
-    title: "Chronic Care",
+    title: "Chronic Care Management",
     description: "Long-term support for diabetes, hypertension, and more.",
   },
   {
-    title: "Laboratory Services",
+    title: "Laboratory Testing",
     description: "Fast and reliable diagnostic testing.",
   },
   {
@@ -95,12 +95,18 @@ export default function HeroSection() {
                 <p className="flex text-blue-50  leading-relaxed mb-6">
                   {card.description}
                 </p>
-                <button className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group/btn">
+                <Link
+                  href={`/services/${encodeURIComponent(
+                  card.title.toLowerCase().replace(/\s+/g, "-")
+                  )}`}
+                >
+                  <button className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group/btn">
                   <span className="uppercase text-sm tracking-wider">
                     learn more
                   </span>
                   <GoArrowRight className="w-5 h-5" />
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
