@@ -12,7 +12,7 @@ const page = () => {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "services" }]}
       />
 
-      <div className="mt-24">
+      <div className="mt-24 px-6">
         <SectionHeader
           title="We Offer Different Services To Improve Your Health"
           subtitle="Our medical facility is dedicated to offering a wide range of
@@ -22,7 +22,7 @@ const page = () => {
           imageSrc="/images/section-img.png"
         />
 
-        <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="max-w-7xl mx-auto px-2 py-16">
           <ServicesGrid services={services} />
         </div>
       </div>

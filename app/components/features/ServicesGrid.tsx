@@ -26,7 +26,7 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
           <Link
             key={service.id}
             href={`/services/${service.slug}`}
-            className="flex gap-12 cursor-pointer group"
+            className="flex gap-6 md:gap-12 cursor-pointer group"
           >
             <div className="text-blue-500 group-hover:text-blue-700">
               <Icon size={48} />

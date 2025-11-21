@@ -77,7 +77,7 @@ export default function ContactPage() {
         isLoading={isLoading}
       />
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-6 lg:grid-cols-3 gap-12 mb-12">
           <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-12 items-center">
             <div>
               <FaPhone className="text-3xl" />
