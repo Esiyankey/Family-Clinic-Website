@@ -1,93 +1,84 @@
-// header image handled by SectionHeader
-import { BiCheck, BiShield } from "react-icons/bi";
-import { BsCreditCard } from "react-icons/bs";
-import { Button } from "@/components/ui/button";
-import { CgClose } from "react-icons/cg";
-import SectionHeader from "@/app/components/features/SectionHeader";
-import Link from "next/link";
+"use client";
 
+import { BiShield, BiCreditCard } from "react-icons/bi";
+import { GoXCircle, GoCheckCircle } from "react-icons/go";
 
 const plans = [
   {
-    icon: <BiShield className="w-12 h-12 text-[#1a76d1] mx-auto" />,
-    title: "Insurance Support",
-    subtitle: "Accepted Providers",
-    price: "",
+    title: "Insurance support",
+    icon: <BiShield className="h-10 w-10 text-[#1a76d1]" />,
     items: [
-      { text: "Verification of coverage before visits", available: true },
-      { text: "Help with claim submission and coordination", available: true },
+      "We verify benefits before your visit whenever possible.",
+      "Most major insurance plans accepted.",
+      "We help explain coverage and estimated out-of-pocket costs.",
     ],
-    button: "View Accepted Plans",
-    link: "/insurance-and-billing"
   },
   {
-    icon: <BsCreditCard className="w-12 h-12 text-[#1a76d1] mx-auto" />,
-    title: "Billing Assistance:",
-    subtitle: "Simple & Transparent",
-    price: "",
+    title: "Flexible billing options",
+    icon: <BiCreditCard className="h-10 w-10 text-[#1a76d1]" />,
     items: [
-      { text: "Payment plans for self-pay patients", available: true },
-      {
-        text: "Flexible payment options (cash, card, or insurance)",
-        available: true,
-      },
+      "Transparent pricing for common visits and procedures.",
+      "Interest-free payment plans for eligible balances.",
+      "Secure online and in-clinic payment options.",
     ],
-    button: "Contact Us",
-    link: "/contact"
   },
 ];
 
-export const InsuranceAndBilling = () => {
+export function InsuranceAndBilling() {
   return (
-    <section className="my-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <SectionHeader
-          title="Insurance and Billing"
-          subtitle="We work with most major insurance providers to make quality healthcare accessible and affordable."
-          imageSrc="/images/section-img.png"
-        />
-        <div className="grid md:grid-cols-2 gap-8 mt-24">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md border border-gray-100 rounded-sm p-8 flex flex-col items-center text-center hover:shadow-lg transition"
-            >
-              <div className="mb-4">{plan.icon}</div>
-              <h3 className="text-xl md:text-3xl font-semibold text-gray-900 mb-1">
-                {plan.title}
-              </h3>
-              <p className="text-[#1a76d1] mb-6 text-lg md:text-xl">
-                {plan.subtitle}
-              </p>
+    <section
+      id="insurance"
+      className="bg-white py-14 md:py-16 lg:py-20 border-t border-slate-100"
+    >
+      <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+        <div className="max-w-2xl text-center mx-auto">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#1a76d1]">
+            Insurance & billing
+          </p>
+          <h2 className="mt-2 text-2xl md:text-3xl font-semibold">
+            Simple, transparent billing for your family’s care.
+          </h2>
+          <p className="mt-3 text-sm md:text-base text-slate-600">
+            We want finances to be the least stressful part of your visit. Our
+            team will walk you through insurance coverage, co-pays and payment
+            options before you leave the clinic.
+          </p>
+        </div>
 
-              <ul className="space-y-3  text-left w-full">
-                {plan.items.map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-center justify-between  text-gray-700"
-                  >
-                    <span className="text-sm md:text-base lg:text-xl">
-                      {item.text}
-                    </span>
-                    {item.available ? (
-                      <BiCheck className="text-[#1a76d1] w-5 h-5" />
-                    ) : (
-                      <CgClose className="text-gray-400 w-5 h-5" />
-                    )}
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {plans.map((plan, idx) => (
+            <div
+              key={plan.title}
+              data-aos="fade-up"
+              data-aos-delay={idx * 150}
+              className="flex h-full flex-col rounded-2xl border border-slate-100 bg-slate-50/80 p-6 shadow-sm"
+            >
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm">
+                  {plan.icon}
+                </div>
+                <h3 className="text-lg font-semibold">{plan.title}</h3>
+              </div>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                {plan.items.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <GoCheckCircle className="mt-0.5 h-4 w-4 text-emerald-500" />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
-
-              <Link href={plan.link} className="w-full">
-                <Button className="mt-8 bg-[#4891da] hover:bg-[#1a76d1] text-lg text-white rounded-sm w-full px-6 py-5">
-
-                {plan.button}
-                </Button>
-              </Link>
             </div>
           ))}
+        </div>
+
+        <div className="mt-8 max-w-3xl text-xs md:text-sm text-slate-500 mx-auto text-center">
+          <p>
+            If your insurance plan is not listed or you have questions about
+            coverage, our front desk team will gladly review your options
+            before scheduling or at check-in.
+          </p>
         </div>
       </div>
     </section>
   );
-};
+}

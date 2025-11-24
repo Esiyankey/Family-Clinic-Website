@@ -93,7 +93,7 @@ export default function Footer() {
                 <div>
                   <p className="font-semibold mb-1 text-white">Email</p>
                   <Link
-                    href="mailto:info@familyclinic.com"
+                    href="mailto:info@familyclinic.clinic"
                     className="hover:text-white transition-colors"
                   >
                     info@familyclinic.clinic

@@ -47,15 +47,15 @@ export const Navbar = () => {
           <div className="flex gap-2 items-center">
             <HiMail size={20} className="text-[#1a76d1]" />
             <span className="text-sm md:text-lg hover:text-[#1a76d1] cursor-pointer">
-              info@familyclinic.com
+              info@familyclinic.clinic
             </span>
           </div>
         </div>
-        <div>
+        {/* <div>
           <span className="hover:text-[#1a76d1] text-sm md:text-lg cursor-pointer">
             admin login
           </span>
-        </div>
+        </div> */}
       </div>
       <div className="w-full h-0.5 bg-[#eeeeee]"></div>
 

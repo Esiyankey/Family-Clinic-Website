@@ -1,113 +1,144 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GoArrowRight } from "react-icons/go";
-import Link from "next/link";
 
 const cards = [
   {
-    title: "Annual Physicals",
-    description: "Stay on top of your health with routine exams.",
+    title: "Family Medicine",
+    description: "Ongoing care for children, adults and seniors.",
   },
   {
-    title: "Chronic Care Management",
-    description: "Long-term support for diabetes, hypertension, and more.",
+    title: "Same-Day Visits",
+    description: "Reserved slots for urgent, non-emergency concerns.",
   },
   {
-    title: "Laboratory Testing",
-    description: "Fast and reliable diagnostic testing.",
+    title: "Chronic Care",
+    description: "Support for diabetes, hypertension and more.",
   },
   {
-    title: "Telemedicine",
-    description: "Convenient virtual consultations.",
+    title: "Telehealth",
+    description: "Video visits for follow-ups and minor issues.",
   },
 ];
 
 export default function HeroSection() {
   return (
-    <section>
-      <div className="relative w-full h-[650px] overflow-hidden">
+    <section
+      id="hero"
+      className="relative overflow-hidden bg-slate-950 text-white"
+    >
+      {/* Background image + overlay */}
+      <div className="absolute inset-0">
         <Image
-          src="/images/doctor.jpg"
-          alt="Family Clinic"
+          src="/images/hero-bg.jpg"
+          alt="Family clinic"
           fill
           className="object-cover"
           priority
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/75 to-black/40" />
+      </div>
 
-        <div className="absolute inset-0 bg-linear-to-r from-[#1a76d1]/30 via-[#1a76d1]/20 to-transparent" />
+      {/* Content */}
+      <div className="relative z-10 mx-auto flex min-h-[520px] max-w-6xl flex-col gap-10 px-4 py-16 md:min-h-[560px] md:px-6 lg:px-8 lg:flex-row lg:items-center">
+        {/* Left: text */}
+        <div
+          className="max-w-xl space-y-6"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <p className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em]">
+            Family-centred primary care
+          </p>
 
-        <div className="absolute inset-0 flex items-center lg:ml-10 mb-24 z-10">
-          <div className="container mx-auto px-6">
-            <div className="max-w-2xl mt-32 md:mt-0 text-gray-800">
-              <h2 className="text-lg  md:text-xl text-[#1a76d1] mb-2">
-                Your Partner in Health & Wellness
-              </h2>
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-semibold leading-tight">
+            Compassionate care for every member of your family.
+          </h1>
 
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Welcome to Family Clinic
-              </h1>
+          <p className="text-base md:text-lg text-slate-100/90">
+            From routine checkups to long-term care, our team provides
+            personalised, relationship-based medicine for all ages.
+          </p>
 
-              <p className="hidden lg:flex text-lg md:text-xl mb-6 text-gray-700">
-                At Family Clinic, we provide compassionate care for families
-                across Maryland.
-              </p>
+          <div className="flex flex-wrap items-center gap-3 pt-2">
+            <Button asChild size="lg">
               <Link href="/appointment">
-                <Button className="p-7 mt-10 w-72 bg-[#1a76d1] text-white rounded-[3px] text-lg font-semibold">
-                  Book Appointment
-                </Button>
+                Book an appointment
+                <GoArrowRight className="ml-2 h-5 w-5" />
               </Link>
+            </Button>
+
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/50 bg-transparent text-white hover:bg-white hover:text-slate-900"
+            >
+              <a href="tel:+233000000000">Call +233 00 000 000</a>
+            </Button>
+          </div>
+
+          <p className="text-xs md:text-sm text-blue-100/90">
+            Open Monday–Saturday · Now accepting new patients
+          </p>
+        </div>
+
+        {/* Right: simple trust card */}
+        <div
+          className="mt-8 w-full max-w-md lg:mt-0 lg:ml-auto"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <div className="rounded-2xl bg-white/10 p-4 backdrop-blur shadow-xl">
+            <div className="relative mb-4 h-40 overflow-hidden rounded-xl">
+              <Image
+                src="/images/doctor.jpg"
+                alt="Doctor with family"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+              <div className="absolute bottom-3 left-3 text-sm text-white">
+                <p className="font-semibold">Board-certified providers</p>
+                <p className="text-xs text-blue-100">
+                  Trusted by families across our community
+                </p>
+              </div>
             </div>
+            <p className="text-sm md:text-base text-slate-100">
+              On-site lab services, vaccinations and chronic care—designed to
+              keep your family close to home for most of their healthcare.
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="container max-w-11/12 mx-auto px-4 -mt-32 relative z-30">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Four highlight cards under hero */}
+      <div className="relative z-10 mx-auto -mt-6 max-w-6xl px-4 pb-12 md:px-6 lg:px-8">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {cards.map((card, index) => (
             <div
+              key={card.title}
               data-aos="fade-up"
-              data-aos-delay={index * 150}
-              key={index}
-              className="relative lg:w-88 bg-[#1a76d1] h-56 text-white p-8 rounded-sm shadow-xl hover:shadow-2xl transition-all overflow-hidden group"
+              data-aos-delay={index * 120}
+              className="group rounded-2xl bg-white text-slate-900 p-4 shadow-md transition-transform hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="absolute bottom-0 right-0 opacity-10 group-hover:opacity-20 transition-opacity">
-                <svg
-                  width="180"
-                  height="180"
-                  viewBox="0 0 180 180"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="translate-x-8 translate-y-8"
-                >
-                  <path
-                    d="M110 40C110 28.9543 101.046 20 90 20H90C78.9543 20 70 28.9543 70 40V70H40C28.9543 70 20 78.9543 20 90V90C20 101.046 28.9543 110 40 110H70V140C70 151.046 78.9543 160 90 160V160C101.046 160 110 151.046 110 140V110H140C151.046 110 160 101.046 160 90V90C160 78.9543 151.046 70 140 70H110V40Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-
-              <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4 leading-tight">
-                  {card.title}
-                </h3>
-                <p className="flex text-blue-50  leading-relaxed mb-6">
-                  {card.description}
-                </p>
-                <Link
-                  href={`/services/${encodeURIComponent(
-                  card.title.toLowerCase().replace(/\s+/g, "-")
-                  )}`}
-                >
-                  <button className="flex items-center gap-2 text-white font-semibold hover:gap-4 transition-all group/btn">
-                  <span className="uppercase text-sm tracking-wider">
-                    learn more
-                  </span>
-                  <GoArrowRight className="w-5 h-5" />
-                  </button>
-                </Link>
-              </div>
+              <h3 className="text-sm md:text-base font-semibold">
+                {card.title}
+              </h3>
+              <p className="mt-2 text-xs md:text-sm text-slate-600">
+                {card.description}
+              </p>
+              <Link
+                href="/services"
+                className="mt-3 inline-flex items-center text-xs font-medium text-[#1a76d1] hover:underline"
+              >
+                Learn more
+                <GoArrowRight className="ml-1 h-4 w-4" />
+              </Link>
             </div>
           ))}
         </div>

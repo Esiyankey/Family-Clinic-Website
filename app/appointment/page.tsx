@@ -6,7 +6,6 @@ import HeroHeader from "../components/features/HeroHeader";
 
 export default function AppointmentsPage() {
   useEffect(() => {
-    // Load Calendly widget script
     const script = document.createElement("script");
     script.src = "https://assets.calendly.com/assets/external/widget.js";
     script.async = true;
@@ -17,136 +16,143 @@ export default function AppointmentsPage() {
     <main>
       <HeroHeader
         title="Book Your Appointment"
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "appointments" }]}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Appointments" },
+        ]}
       />
 
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1">
-            <div className="space-y-6">
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  Book Online Easily
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Book your visit through our simple Calendly-powered scheduler:
-                </p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-3">
-                    <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Choose your service</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">
-                      Select preferred date and time
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">
-                      Receive instant confirmation
-                    </span>
-                  </li>
-                </ul>
-              </div>
+      {/* MAIN CONTENT */}
+      <div className="max-w-7xl mx-auto px-4 py-16 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          {/* LEFT INFO PANELS */}
+          <div className="space-y-8 lg:col-span-1">
+            {/* BOOK ONLINE */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Book Online in Minutes
+              </h2>
+              <p className="text-gray-600 text-base md:text-lg mb-6">
+                Schedule your visit easily through our Calendly-powered online
+                booking system:
+              </p>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start gap-3">
+                  <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
+                  <span className="text-gray-700 text-base md:text-lg">
+                    Choose your service type
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
+                  <span className="text-gray-700 text-base md:text-lg">
+                    Select a date and time
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
+                  <span className="text-gray-700 text-base md:text-lg">
+                    Receive instant confirmation
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-              <div className="bg-blue-50 rounded-xl p-8 border border-blue-200">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  What Youll Need
+            {/* REQUIREMENTS */}
+            <div className="bg-blue-50 rounded-2xl p-8 border border-blue-200">
+              <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4">
+                What You’ll Need
+              </h3>
+              <ul className="space-y-2 text-gray-700 text-base md:text-lg">
+                <li className="flex items-center gap-2">
+                  <span className="text-[#1a76d1] font-semibold">•</span>
+                  Full Name
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#1a76d1] font-semibold">•</span>
+                  Phone Number
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#1a76d1] font-semibold">•</span>
+                  Email Address
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#1a76d1] font-semibold">•</span>
+                  Reason for Visit
+                </li>
+              </ul>
+            </div>
+
+            {/* OFFICE HOURS */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <FiClock className="text-[#1a76d1] text-xl" />
+                <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+                  Office Hours
                 </h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-center gap-2">
-                    <span className="text-[#1a76d1] font-semibold">•</span>
-                    <span>Name</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="text-[#1a76d1] font-semibold">•</span>
-                    <span>Phone number</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="text-[#1a76d1] font-semibold">•</span>
-                    <span>Email address</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="text-[#1a76d1] font-semibold">•</span>
-                    <span>Reason for visit</span>
-                  </li>
-                </ul>
               </div>
 
-              {/* Office Hours Section */}
-              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
-                <div className="flex gap-3 mb-4">
-                  <FiClock className="text-[#1a76d1] text-xl shrink-0" />
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    Office Hours
-                  </h3>
+              <div className="space-y-4 text-gray-700 text-base md:text-lg">
+                <div>
+                  <p className="font-medium text-gray-900">
+                    Monday – Thursday
+                  </p>
+                  <p className="text-sm md:text-base">
+                    8 AM – 6 PM (Walk-ins welcome)
+                  </p>
                 </div>
-                <div className="space-y-3 text-gray-700">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Monday – Thursday
-                    </p>
-                    <p className="text-sm">8 AM – 6 PM (Walk-ins welcome)</p>
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Friday – Saturday
-                    </p>
-                    <p className="text-sm">By appointment</p>
-                  </div>
-                  <div className="mt-4 pt-4 border-t border-gray-200">
-                    <p className="text-sm text-gray-600">
-                      Have questions? Feel free to call us during office hours.
-                    </p>
-                  </div>
+
+                <div>
+                  <p className="font-medium text-gray-900">
+                    Friday – Saturday
+                  </p>
+                  <p className="text-sm md:text-base">By appointment only</p>
+                </div>
+
+                <div className="mt-4 pt-4 border-t border-gray-200">
+                  <p className="text-gray-600 text-sm md:text-base">
+                    For urgent questions, reach out during office hours.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
+          {/* RIGHT: CALENDLY */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
               <div
                 className="calendly-inline-widget"
                 data-url="https://calendly.com/d/cthm-fkf-dkz"
                 style={{ minWidth: "320px", height: "700px" }}
               ></div>
-              <script
-                type="text/javascript"
-                src="https://assets.calendly.com/assets/external/widget.js"
-                async
-              ></script>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      {/* FOOTER info cards */}
+      <div className="max-w-7xl mx-auto px-4 pb-16 md:pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-8 items-start">
+            <FiPhone className="text-2xl flex-shrink-0" />
             <div>
-              <FiPhone className="text-2xl" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-semibold mb-1">Call Us</span>
-              <span className="text-blue-100">
-                Have questions? Call us during office hours
-              </span>
+              <p className="text-lg md:text-xl font-semibold">Call Us</p>
+              <p className="text-blue-100 text-sm md:text-base">
+                Have questions about your appointment?
+              </p>
             </div>
           </div>
+
           <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-8 items-start">
+            <FiCheckCircle className="text-2xl flex-shrink-0" />
             <div>
-              <FiCheckCircle className="text-2xl" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-semibold mb-1">
+              <p className="text-lg md:text-xl font-semibold">
                 Instant Confirmation
-              </span>
-              <span className="text-blue-100">
-                Receive confirmation details via email instantly
-              </span>
+              </p>
+              <p className="text-blue-100 text-sm md:text-base">
+                Get your booking details immediately after scheduling.
+              </p>
             </div>
           </div>
         </div>

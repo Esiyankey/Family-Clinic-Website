@@ -1,33 +1,42 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 
-export const ContactSection = () => {
+export function ContactSection() {
   return (
-    <section className="bg-[#4891da] ">
-      <div className="py-20 flex flex-col items-center justify-center">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl max-w-3xl text-center font-bold my-4 text-white">
-          Do you need Emergency Medical Care? Call @{" "}
-        </h1>
-        <p className="text-base md:text-xl text-center px-6 my-4 font-semibold text-white max-w-2xl ">
-          If you or a loved one requires urgent medical care, our team is ready
-          to assist you. Call us immediately for expert help.
-        </p>
-        <div className="my-6 flex gap-4">
-          <Link href="/contact">
-            <Button className="bg-white text-[#1a76d1] hover:border hover:border-white hover:bg-[#1a76d1] hover:text-white p-6 rounded-sm text-base font-semibold">
-              Contact Now
-            </Button>
-          </Link>
-          <Link href="/appointment">
-            <Button className="border border-white bg-transparent text-white p-6 rounded-sm text-base font-semibold">
-              Learn More
-              <BsArrowRight className="ml-2" />
-            </Button>
-          </Link>
+    <section className="bg-[#1a76d1] py-10 md:py-12 lg:py-14">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 text-center text-white md:flex-row md:justify-between md:text-left">
+        <div className="max-w-xl">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug">
+            Need urgent medical care? Call us right away.
+          </h2>
+          <p className="mt-2 text-sm md:text-base text-blue-100">
+            For emergencies, please call{" "}
+            <a
+              href="tel:+233000000000"
+              className="font-semibold underline decoration-white/60 underline-offset-2"
+            >
+              +233 00 000 000
+            </a>{" "}
+            or visit the nearest emergency room immediately.
+          </p>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Button asChild variant="secondary" className="bg-white text-[#1a76d1]">
+            <Link href="/contact">Contact us online</Link>
+          </Button>
+
+          <Button
+            asChild
+            variant="outline"
+            className="border-white/60 bg-transparent text-white hover:bg-white hover:text-[#1a76d1]"
+          >
+            <a href="/faq">View patient FAQs</a>
+          </Button>
         </div>
       </div>
     </section>
   );
-};
+}

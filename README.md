@@ -84,7 +84,7 @@ Email Service:
 Hosting: Vercel
 Version Control: Git + GitHub
 Contact
-Email: info@familyclinic.com
+Email: info@familyclinic.clinic
 Address: 7525 Greenway Center Drive, Greenbelt, MD 20770
 
  License
