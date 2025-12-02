@@ -29,8 +29,8 @@ export default function RootLayout({
   
 
   return (
-    <html lang="en">
-      <body className={`${montserrat.variable}  `}>
+    <html lang="en" className={`${montserrat.variable}  `}>
+      <body className="font-montserrat">
         <AOSWrapper />
         <Navbar />
         {children}
