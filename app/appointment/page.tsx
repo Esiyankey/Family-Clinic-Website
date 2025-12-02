@@ -4,7 +4,7 @@ import { FiClock, FiCheckCircle, FiPhone } from "react-icons/fi";
 import { useEffect } from "react";
 import HeroHeader from "../components/features/HeroHeader";
 
-const AppointmentsPage = () =>{
+export default function AppointmentsPage () {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://assets.calendly.com/assets/external/widget.js";
@@ -161,4 +161,3 @@ const AppointmentsPage = () =>{
   );
 }
 
-export default AppointmentsPage;
