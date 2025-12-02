@@ -4,7 +4,7 @@ import { FiClock, FiCheckCircle, FiPhone } from "react-icons/fi";
 import { useEffect } from "react";
 import HeroHeader from "../components/features/HeroHeader";
 
-export default function AppointmentsPage() {
+const AppointmentsPage = () =>{
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://assets.calendly.com/assets/external/widget.js";
@@ -38,19 +38,19 @@ export default function AppointmentsPage() {
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-3">
-                  <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
+                  <FiCheckCircle className="text-[#1a76d1] mt-1 shrink-0" />
                   <span className="text-gray-700 text-base md:text-lg">
                     Choose your service type
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
+                  <FiCheckCircle className="text-[#1a76d1] mt-1 shrink-0" />
                   <span className="text-gray-700 text-base md:text-lg">
                     Select a date and time
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <FiCheckCircle className="text-[#1a76d1] mt-1 flex-shrink-0" />
+                  <FiCheckCircle className="text-[#1a76d1] mt-1 shrink-0" />
                   <span className="text-gray-700 text-base md:text-lg">
                     Receive instant confirmation
                   </span>
@@ -135,7 +135,7 @@ export default function AppointmentsPage() {
       <div className="max-w-7xl mx-auto px-4 pb-16 md:pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-8 items-start">
-            <FiPhone className="text-2xl flex-shrink-0" />
+            <FiPhone className="text-2xl shrink-0" />
             <div>
               <p className="text-lg md:text-xl font-semibold">Call Us</p>
               <p className="text-blue-100 text-sm md:text-base">
@@ -145,7 +145,7 @@ export default function AppointmentsPage() {
           </div>
 
           <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-8 items-start">
-            <FiCheckCircle className="text-2xl flex-shrink-0" />
+            <FiCheckCircle className="text-2xl shrink-0" />
             <div>
               <p className="text-lg md:text-xl font-semibold">
                 Instant Confirmation
@@ -160,3 +160,5 @@ export default function AppointmentsPage() {
     </main>
   );
 }
+
+export default AppointmentsPage;

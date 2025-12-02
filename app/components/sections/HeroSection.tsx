@@ -39,7 +39,7 @@ export default function HeroSection() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/75 to-black/40" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/75 to-black/40" />
       </div>
 
       {/* Content */}
@@ -100,7 +100,7 @@ export default function HeroSection() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/55 to-transparent" />
               <div className="absolute bottom-3 left-3 text-sm text-white">
                 <p className="font-semibold">Board-certified providers</p>
                 <p className="text-xs text-blue-100">
