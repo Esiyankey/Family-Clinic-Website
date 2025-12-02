@@ -11,7 +11,7 @@ export default function Footer() {
     { name: "About", link: "/about" },
     { name: "Services", link: "/services" },
     { name: "Insurance and Billing", link: "/insurance-and-billing" },
-    { name: "Appointments", link: "/appointment" },
+    // { name: "Appointments", link: "/appointment" },
     { name: "Contact", link: "/contact" },
   ];
 
@@ -38,25 +38,37 @@ export default function Footer() {
             </nav>
           </div>
 
+
           <div>
-            <h3 className="text-xl font-bold mb-4 pb-3 border-b-2 border-white w-fit">
-              Resources
+              <h3 className=" text-xl mb-4 pb-3 border-b-2 border-white w-fit">
+              Follow Us
             </h3>
-            <nav className="space-y-3">
-              {["FAQ", "Privacy Policy"].map((item) => (
-                <div key={item} className="flex items-center gap-3">
-                  <span className="text-blue-300">›</span>
-                  <Link
-                    href="#"
-                    className="hover:text-blue-100 transition-colors"
-                  >
-                    {item}
-                  </Link>
-                </div>
-              ))}
-            </nav>
+            <div className="flex gap-4 mt-6">
+              <Link
+                href="#"
+                className="border-2 border-white rounded-full p-3 hover:bg-white hover:text-blue-600 transition-colors"
+                aria-label="Facebook"
+              >
+                <FaFacebook size={20} />
+              </Link>
+              <Link
+                href="#"
+                className="border-2 border-white rounded-full p-3 hover:bg-white hover:text-blue-600 transition-colors"
+                aria-label="Instagram"
+              >
+                <BsInstagram size={20} />
+              </Link>
+              <Link
+                href="#"
+                className="border-2 border-white rounded-full p-3 hover:bg-white hover:text-blue-600 transition-colors"
+                aria-label="Twitter"
+              >
+                <BsTwitterX size={20} />
+              </Link>
+            </div>
           </div>
 
+          
           <div>
             <h3 className=" text-xl mb-4 pb-3 border-b-2 border-white w-fit">
               Contact Info
@@ -102,29 +114,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex gap-4 mt-6">
-              <Link
-                href="#"
-                className="border-2 border-white rounded-full p-3 hover:bg-white hover:text-blue-600 transition-colors"
-                aria-label="Facebook"
-              >
-                <FaFacebook size={20} />
-              </Link>
-              <Link
-                href="#"
-                className="border-2 border-white rounded-full p-3 hover:bg-white hover:text-blue-600 transition-colors"
-                aria-label="Instagram"
-              >
-                <BsInstagram size={20} />
-              </Link>
-              <Link
-                href="#"
-                className="border-2 border-white rounded-full p-3 hover:bg-white hover:text-blue-600 transition-colors"
-                aria-label="Twitter"
-              >
-                <BsTwitterX size={20} />
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>

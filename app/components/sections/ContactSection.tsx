@@ -9,7 +9,7 @@ export function ContactSection() {
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 text-center text-white md:flex-row md:justify-between md:text-left">
         <div className="max-w-xl">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug">
-            Need urgent medical care? Call us right away.
+            Call us right away.
           </h2>
           <p className="mt-2 text-sm md:text-base text-blue-100">
             For emergencies, please call{" "}
@@ -19,7 +19,7 @@ export function ContactSection() {
             >
               +233 00 000 000
             </a>{" "}
-            or visit the nearest emergency room immediately.
+            immediately.
           </p>
         </div>
 

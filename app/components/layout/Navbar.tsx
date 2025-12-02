@@ -17,7 +17,7 @@ export const Navbar = () => {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Insurance and Billing", href: "/insurance-and-billing" },
-    { name: "Appointments", href: "/appointment" },
+    // { name: "Appointments", href: "/appointment" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -64,7 +64,7 @@ export const Navbar = () => {
           scrollY > 40 ? "fixed top-0 w-full z-50 shadow-sm" : "relative "
         } `}
       >
-        <div className="flex  justify-between items-center  max-w-5/6 mx-auto   lg:py-2">
+        <div className="flex  justify-between items-center  max-w-5/6 mx-auto   ">
           <div>
             <Image
               src="/images/family_clinic_logo.png"
@@ -101,9 +101,9 @@ export const Navbar = () => {
                 );
               })}
             </div>
-            <Link href="/appointment" className="hidden  lg:flex mr-12">
-              <Button className="p-7  bg-[#1a76d1] text-white rounded-[3px] text-lg font-semibold">
-                Book Appointment
+            <Link href="/contact" className="hidden  lg:flex mr-12">
+              <Button className="p-4  bg-[#1a76d1] text-white rounded-[3px] text-lg font-semibold">
+                Contact Us
               </Button>
             </Link>
           </div>
@@ -148,9 +148,9 @@ export const Navbar = () => {
               );
             })}
 
-            <Link href="/appointment" className="w-full mt-4">
-              <Button className="p-6 bg-[#1a76d1] rounded-sm text-lg">
-                Book Appointment
+            <Link href="/contact" className="w-full mt-4">
+              <Button className="p-3 bg-[#1a76d1] rounded-sm text-lg">
+                Contact Us
               </Button>
             </Link>
           </div>

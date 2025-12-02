@@ -76,7 +76,7 @@ export default function ContactPage() {
       {/* Contact form section */}
       <ContactForm
         title="We’d love to hear from you"
-        description="Have a question about appointments, billing, or our services? Send us a message and our team will get back to you as soon as possible."
+        description="Have a question about billing, or our services? Send us a message and our team will get back to you as soon as possible."
         fields={formFields}
         buttonText="Send message"
         onSubmit={handleSubmit}
@@ -110,7 +110,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Address / Map */}
+        
           <Link
             href="https://www.google.com/maps/search/?api=1&query=7525+Greenway+Center+Drive,+Greenbelt,+MD+20770"
             target="_blank"
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   Visit our clinic
                 </span>
                 <span className="text-base md:text-lg">
-                  7525 Greenway Center Drive
+                  7525 GreenWay Center Drive
                 </span>
                 <span className="text-sm md:text-base text-blue-100">
                   Greenbelt, MD 20770
@@ -140,7 +140,7 @@ export default function ContactPage() {
             </div>
           </Link>
 
-          {/* Hours */}
+       
           <div className="flex gap-4 bg-[#1a76d1] text-white rounded-xl p-6 items-start">
             <div>
               <FiClock className="text-3xl" />
@@ -150,13 +150,11 @@ export default function ContactPage() {
                 Clinic hours
               </span>
               <span className="text-sm md:text-base text-blue-100">
-                Monday – Thursday: 8 AM – 6 PM
+                Monday – Thursday: 8:00 AM – 4:30 PM
               </span>
-              <span className="text-sm md:text-base text-blue-100">
-                Friday – Saturday: By appointment
-              </span>
+             
               <span className="text-xs md:text-sm text-blue-100 mt-2">
-                Closed on Sundays and public holidays.
+                Closed from friday - sunday.
               </span>
             </div>
           </div>

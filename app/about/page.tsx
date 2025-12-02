@@ -12,7 +12,7 @@ export default function AboutUsSection() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
       />
 
-      {/* About intro section */}
+     
       <div className="max-w-7xl mx-auto grid grid-cols-1 py-16 md:py-20 md:grid-cols-2 gap-12 md:gap-16 px-6 items-center">
         <div>
           <p className="text-[#1a76d1] text-sm md:text-base font-semibold tracking-[0.18em] uppercase mb-3">
@@ -52,12 +52,12 @@ export default function AboutUsSection() {
           </div>
         </div>
 
-        {/* Right: image collage */}
+ 
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-4">
             <div className="relative w-full h-40 md:h-44 rounded-md overflow-hidden shadow-md">
               <Image
-                src="/images/doctor.jpg"
+                src="/images/lat_doc_img.jpg"
                 alt="Doctor"
                 fill
                 className="object-cover"
@@ -66,7 +66,7 @@ export default function AboutUsSection() {
 
             <div className="relative w-full h-40 md:h-44 rounded-md overflow-hidden shadow-md">
               <Image
-                src="/images/team_doctor.jpg"
+                src="/images/lat_doc_img4.jpg"
                 alt="Team of doctors"
                 fill
                 className="object-cover"
@@ -76,7 +76,7 @@ export default function AboutUsSection() {
 
           <div className="relative w-full h-56 md:h-80 rounded-md overflow-hidden shadow-md">
             <Image
-              src="/images/team.jpg"
+              src="/images/group-image.jpg"
               alt="Healthcare team"
               fill
               className="object-cover"
@@ -85,7 +85,7 @@ export default function AboutUsSection() {
         </div>
       </div>
 
-      {/* Mission, Vision & Values */}
+     
       <div className="max-w-7xl pb-20 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6 mt-16 md:mt-20 items-center">
         <div>
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-gray-900">
@@ -122,7 +122,7 @@ export default function AboutUsSection() {
 
         <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/images/team_doctor.jpg"
+            src="/images/group-image.jpg"
             fill
             alt="Mission and vision"
             className="object-cover"
