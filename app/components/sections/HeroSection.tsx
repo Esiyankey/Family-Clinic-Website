@@ -12,7 +12,7 @@ const cards = [
   },
   {
     title: "Same-Day Visits",
-    description: "Reserved slots for urgent, non-emergency concerns.",
+    description: "Reserved slots for non-emergency concerns.",
   },
   {
     title: "Chronic Care",
@@ -65,8 +65,8 @@ export default function HeroSection() {
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <Button asChild size="lg">
-              <Link href="/appointment">
-                Book an appointment
+              <Link href="/contact">
+                Contact Us
                 <GoArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

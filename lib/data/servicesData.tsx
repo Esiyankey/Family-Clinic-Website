@@ -22,13 +22,8 @@ export const servicesData = [
       "Baseline tracking for blood pressure, heart rate, and vitals",
       "Updated vaccinations and routine screenings"
     ],
-    procedure: [
-      "Medical history review",
-      "Physical examination and vital signs check",
-      "Laboratory tests and preventive screenings",
-      "Discussion of results and personalized wellness plan"
-    ],
-    cta: "Book Your Annual Physical",
+    
+    // cta: "Book Your Annual Physical",
   },
 
   {
@@ -46,13 +41,8 @@ export const servicesData = [
       "Education on nutrition, medication, and daily habits",
       "Reduced emergency visits through proactive care"
     ],
-    procedure: [
-      "Initial chronic condition evaluation",
-      "Development of personalized management plan",
-      "Monthly or bi-weekly follow-ups (in-person or virtual)",
-      "Ongoing medication and lifestyle adjustments"
-    ],
-    cta: "Start Chronic Care Management",
+    
+    // cta: "Start Chronic Care Management",
   },
 
   {
@@ -62,7 +52,7 @@ export const servicesData = [
     slug: "laboratory-testing",
     description: "Reliable on-site diagnostics with fast digital results.",
     longDescription:
-      "Our Laboratory Testing services provide fast, accurate diagnostic results to support effective treatment. We offer comprehensive bloodwork, urine analysis, infection screening, pregnancy tests, wellness panels, and more. All tests are performed by certified technicians using modern diagnostic equipment, with results delivered securely online.",
+      "Our Laboratory Testing services provide fast, accurate diagnostic results to support effective treatment. We offer comprehensive bloodwork, urinalysis, infection screening, pregnancy tests, wellness panels, and more. All tests are performed by certified technicians using modern diagnostic equipment, with results delivered securely online.",
     image: "/images/services/lab-testing.jpg",
     benefits: [
       "Fast and reliable diagnostic testing",
@@ -70,13 +60,8 @@ export const servicesData = [
       "Accurate data to support treatment decisions",
       "Wide range of in-house tests available"
     ],
-    procedure: [
-      "Physician order or walk-in request",
-      "Sample collection by trained technicians",
-      "Laboratory processing and quality verification",
-      "Results delivered digitally with follow-up explanation"
-    ],
-    cta: "Book a Laboratory Test",
+   
+    // cta: "Book a Laboratory Test",
   },
 
   {
@@ -94,13 +79,8 @@ export const servicesData = [
       "Healthy habit-building frameworks",
       "Holistic improvement in overall lifestyle"
     ],
-    procedure: [
-      "Wellness assessment and goal setting",
-      "Nutrition and exercise planning",
-      "Weekly or bi-weekly coaching sessions",
-      "Progress review and lifestyle adjustments"
-    ],
-    cta: "Join a Wellness Program",
+   
+    // cta: "Join a Wellness Program",
   },
 
   {
@@ -118,12 +98,7 @@ export const servicesData = [
       "Perfect for follow-ups and non-emergency care",
       "Saves time and reduces clinic visits"
     ],
-    procedure: [
-      "Online appointment booking",
-      "Secure video call session with provider",
-      "Assessment and treatment recommendations",
-      "Digital prescriptions or follow-up scheduling"
-    ],
-    cta: "Book a Telemedicine Visit",
+    
+    // cta: "Book a Telemedicine Visit",
   },
 ];

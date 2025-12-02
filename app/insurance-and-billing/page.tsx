@@ -22,9 +22,9 @@ export default function InsuranceAndBillingPage() {
           </h2>
           <p className="mt-4 text-base md:text-lg text-gray-600">
             We understand that healthcare billing can be confusing. Our goal is
-            to make it simple, clear, and stress-free. Below you’ll find
-            information about insurance plans we accept, payment options, and
-            what to expect before or after your visit.
+            to make it simple, clear, and stress-free. We accept all insurance
+            plans, and our team will verify your benefits before your visit to
+            ensure you fully understand coverage and any out-of-pocket costs.
           </p>
         </div>
 
@@ -40,21 +40,15 @@ export default function InsuranceAndBillingPage() {
                 Insurance Plans We Accept
               </h3>
             </div>
+
             <p className="text-gray-700 text-base leading-relaxed mb-4">
-              We work with major insurance providers to ensure your care is
-              covered whenever possible. Insurance verification is done before
-              your appointment.
+              We accept all insurance plans. Our team verifies your insurance
+              coverage  to ensure a smooth and stress-free experience.
             </p>
-            <ul className="text-sm md:text-base space-y-2 text-gray-700">
-              <li>• Blue Cross Blue Shield</li>
-              <li>• Aetna</li>
-              <li>• Cigna</li>
-              <li>• UnitedHealthcare</li>
-              <li>• Medicaid (State-specific programs)</li>
-              <li>• Medicare</li>
-            </ul>
+
             <p className="mt-4 text-sm text-gray-600 italic">
-              Don’t see your plan? Contact us — we may still be able to help.
+              Not sure if your insurance covers your visit? Contact us — we’re
+              happy to help.
             </p>
           </div>
 
@@ -91,20 +85,21 @@ export default function InsuranceAndBillingPage() {
             <ul className="space-y-3 text-gray-700 text-base">
               <li>
                 <strong className="text-[#1a76d1]">1. Insurance Verification:</strong>{" "}
-                We verify your insurance coverage before your appointment.
+                We verify your benefits to confirm your
+                coverage.
               </li>
               <li>
                 <strong className="text-[#1a76d1]">2. Copay Collection:</strong>{" "}
-                If applicable, your copay is collected at check-in.
+                If your insurance requires a copay, it will be collected at check-in.
               </li>
               <li>
                 <strong className="text-[#1a76d1]">3. Claim Submission:</strong>{" "}
-                We file your insurance claim on your behalf.
+                We submit your insurance claim on your behalf.
               </li>
               <li>
                 <strong className="text-[#1a76d1]">4. Billing Statement:</strong>{" "}
-                If insurance doesn’t cover part of your visit, you’ll receive a
-                simple, itemized statement.
+                If insurance does not fully cover your visit, you will receive a
+                simple, itemized statement for any remaining balance.
               </li>
             </ul>
           </div>
@@ -118,23 +113,25 @@ export default function InsuranceAndBillingPage() {
               <li className="flex items-start gap-3">
                 <FiHelpCircle className="text-[#1a76d1] text-lg mt-1" />
                 <span>
-                  <strong>Do I need a referral?</strong>  
-                  Some insurance plans require referrals for specialist visits.  
+                  <strong>Do I need a referral?</strong>
+                  Some insurance plans require referrals for specialist visits.
                   Our team can help check this for you.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <FiHelpCircle className="text-[#1a76d1] text-lg mt-1" />
                 <span>
-                  <strong>What if I don’t have insurance?</strong>  
-                  We offer discounted self-pay pricing and payment plans.
+                  <strong>What if I don’t have insurance?</strong>
+                  We offer discounted self-pay pricing and flexible payment
+                  plans to make care affordable.
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <FiHelpCircle className="text-[#1a76d1] text-lg mt-1" />
                 <span>
-                  <strong>Can I request an estimate?</strong>  
-                  Yes — we provide cost estimates before your visit.
+                  <strong>Can I request an estimate?</strong>
+                  Yes — we provide cost estimates before your visit so you know
+                  what to expect.
                 </span>
               </li>
             </ul>
@@ -144,3 +141,4 @@ export default function InsuranceAndBillingPage() {
     </main>
   );
 }
+

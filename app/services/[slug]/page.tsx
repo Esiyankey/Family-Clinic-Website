@@ -1,4 +1,4 @@
-"use client";
+
 
 import Link from "next/link";
 import { servicesData } from "../../../lib/data/servicesData";
@@ -91,23 +91,19 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
               <h3 className="mb-3 text-lg md:text-xl font-semibold text-gray-900">
                 What to expect
               </h3>
-              <ol className="space-y-3 text-sm md:text-base text-gray-700 list-decimal list-inside">
-                {service.procedure.map((step, index) => (
-                  <li key={index}>{step}</li>
-                ))}
-              </ol>
+              
             </div>
           </div>
 
           {/* CTA */}
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <Link
-              href="/appointment"
+              href="/contact"
               className="inline-flex items-center rounded-lg bg-[#1a76d1] px-6 py-3 text-sm md:text-base font-medium text-white hover:bg-[#155fb2] transition-colors"
             >
               {service.cta}
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
