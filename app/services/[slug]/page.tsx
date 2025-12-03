@@ -86,13 +86,7 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
               </ul>
             </div>
 
-            {/* Procedure */}
-            <div>
-              <h3 className="mb-3 text-lg md:text-xl font-semibold text-gray-900">
-                What to expect
-              </h3>
-              
-            </div>
+            
           </div>
 
           {/* CTA */}
