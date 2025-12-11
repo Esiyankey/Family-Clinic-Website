@@ -82,7 +82,7 @@ export default function Footer() {
                   <p>
                     7525 GreenWay Center Drive
                     <br />
-                    Greenbelt, MD 20770
+                    STE T8, MD 20770
                   </p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Footer() {
                     href="tel:"
                     className="hover:text-white transition-colors"
                   >
-                    240-790-8309 / 240-790-8432
+                    +2407908193
                   </Link>
                 </div>
               </div>

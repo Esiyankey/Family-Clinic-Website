@@ -42,7 +42,7 @@ export const Navbar = () => {
               className="fill-current text-[#1a76d1]"
               fill="currentColor"
             />
-            <span className="text-sm md:text-lg">+240-790-8309</span>
+            <span className="text-sm md:text-lg">+240-790-8193</span>
           </div>
           <div className="flex gap-2 items-center">
             <HiMail size={20} className="text-[#1a76d1]" />
