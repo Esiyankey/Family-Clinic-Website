@@ -85,7 +85,7 @@ Hosting: Vercel
 Version Control: Git + GitHub
 Contact
 Email: info@familyclinic.clinic
-Address: 7525 GreenWay Center Drive, Greenbelt, MD 20770
+Address: 7525 GreenWay Center Drive,  STE T8 ,MD 20770
 
  License
 This project is licensed under the MIT License.

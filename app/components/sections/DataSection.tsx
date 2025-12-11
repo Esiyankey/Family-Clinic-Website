@@ -1,10 +1,10 @@
 "use client";
 
 const stats = [
-  { label: "Families served", value: "x,xxx+" },
-  { label: "Years of care", value: "x+" },
-  { label: "Healthcare professionals", value: "x+" },
-  { label: "Patient satisfaction", value: "xx%" },
+  { label: "Families served", value: "2,000+" },
+  { label: "Years of care", value: "5+" },
+  { label: "Healthcare professionals", value: "30+" },
+  { label: "Patient satisfaction", value: "80%" },
 ];
 
 export function DataSection() {

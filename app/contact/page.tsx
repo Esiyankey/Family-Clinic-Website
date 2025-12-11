@@ -99,7 +99,7 @@ export default function ContactPage() {
                 href="tel:+2407908309"
                 className="text-2xl font-semibold leading-tight"
               >
-                +240-790-8309
+                +240-790-8193
               </a>
               <a
                 href="mailto:info@familyclinic.clinic"
@@ -112,7 +112,7 @@ export default function ContactPage() {
 
         
           <Link
-            href="https://www.google.com/maps/search/?api=1&query=7525+Greenway+Center+Drive,+Greenbelt,+MD+20770"
+            href="https://www.google.com/maps/search/?api=1&query=7525+GreenWay+Center+Drive,+Greenbelt,+MD+20770"
             target="_blank"
             rel="noopener noreferrer"
             className="block"
@@ -129,7 +129,7 @@ export default function ContactPage() {
                   7525 GreenWay Center Drive
                 </span>
                 <span className="text-sm md:text-base text-blue-100">
-                  Greenbelt, MD 20770
+                   STE T8, MD 20770
                 </span>
 
                 <span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-white">
