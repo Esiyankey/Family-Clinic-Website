@@ -4,7 +4,7 @@ const stats = [
   { label: "Families served", value: "2,000+" },
   { label: "Years of care", value: "5+" },
   { label: "Healthcare professionals", value: "30+" },
-  { label: "Patient satisfaction", value: "80%" },
+  { label: "Patient satisfaction", value: "95%" },
 ];
 
 export function DataSection() {
