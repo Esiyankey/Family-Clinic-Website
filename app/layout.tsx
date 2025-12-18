@@ -13,6 +13,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+   icons: {
+    icon: "/favicon.png",
+  },
   title: "Family Clinic",
   description:
     "Welcome to Family Clinic your trusted partner in health and wellness",
