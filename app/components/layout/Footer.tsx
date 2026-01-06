@@ -95,7 +95,7 @@ export default function Footer() {
                     href="tel:"
                     className="hover:text-white transition-colors"
                   >
-                    +2407908193
+                    +1 (240) 790-8193
                   </Link>
                 </div>
               </div>

@@ -96,10 +96,10 @@ export default function ContactPage() {
                 Call or email us
               </span>
               <a
-                href="tel:+2407908309"
+                href="tel:+1 (240) 790-8193"
                 className="text-2xl font-semibold leading-tight"
               >
-                +240-790-8193
+                +1 (240) 790-8193
               </a>
               <a
                 href="mailto:info@familyclinic.clinic"
@@ -154,7 +154,7 @@ export default function ContactPage() {
               </span>
              
               <span className="text-xs md:text-sm text-blue-100 mt-2">
-                Closed from friday - sunday.
+                Closed from Friday - Sunday.
               </span>
             </div>
           </div>

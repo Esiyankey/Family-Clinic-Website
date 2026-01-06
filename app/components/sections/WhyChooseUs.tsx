@@ -69,7 +69,7 @@ export function WhyChooseUs() {
 
         <div className="mt-10 flex justify-center">
           <Button asChild size="lg">
-            <a href="tel:+233000000000">Talk to our care team</a>
+            <a href="tel:+1 (240) 790-8193">Talk to our care team</a>
           </Button>
         </div>
       </div>

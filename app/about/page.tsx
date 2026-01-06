@@ -45,7 +45,7 @@ export default function AboutUsSection() {
               <div>
                 <p className="text-xs md:text-sm text-gray-500">Emergency</p>
                 <p className="text-lg md:text-xl font-bold text-gray-800">
-                  (+233) 0123456789
+                  +1 (240) 790-8193
                 </p>
               </div>
             </div>
