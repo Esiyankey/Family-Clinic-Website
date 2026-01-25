@@ -14,7 +14,7 @@ export function ContactSection() {
           <p className="mt-2 text-sm md:text-base text-blue-100">
             For emergencies, please call{" "}
             <a
-              href="tel:+1 (240) 790-8193"
+              href="tel:911"
               className="font-semibold underline decoration-white/60 underline-offset-2"
             >
               911
