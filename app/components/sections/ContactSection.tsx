@@ -17,7 +17,7 @@ export function ContactSection() {
               href="tel:+1 (240) 790-8193"
               className="font-semibold underline decoration-white/60 underline-offset-2"
             >
-              +1 (240) 790-8193
+              911
             </a>{" "}
             immediately.
           </p>
