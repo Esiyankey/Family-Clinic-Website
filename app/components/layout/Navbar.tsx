@@ -75,7 +75,7 @@ export const Navbar = () => {
         <div className="flex  justify-between items-center  max-w-5/6 mx-auto   ">
           <div className="flex items-center gap-3">
             <Image
-              src="/images/family_clinic_logo.PNG"
+              src="/images/familycliniclogo.png"
               width={80}
               height={80}
               alt="Family Clinic logo"
