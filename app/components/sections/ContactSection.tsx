@@ -14,26 +14,18 @@ export function ContactSection() {
           <p className="mt-2 text-sm md:text-base text-blue-100">
             For emergencies, please call{" "}
             <a
-              href="tel:+233000000000"
+              href="tel:+13014710678"
               className="font-semibold underline decoration-white/60 underline-offset-2"
             >
-              +233 00 000 000
+              301-471-0678
             </a>{" "}
             immediately.
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-3">
+        <div className="flex items-center justify-center gap-3">
           <Button asChild variant="secondary" className="bg-white text-[#1a76d1]">
             <Link href="/contact">Contact us online</Link>
-          </Button>
-
-          <Button
-            asChild
-            variant="outline"
-            className="border-white/60 bg-transparent text-white hover:bg-white hover:text-[#1a76d1]"
-          >
-            <a href="/faq">View patient FAQs</a>
           </Button>
         </div>
       </div>

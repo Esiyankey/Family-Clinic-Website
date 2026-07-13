@@ -4,6 +4,7 @@ import { BsInstagram, BsTwitterX } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa6";
 import { HiMail } from "react-icons/hi";
 import { ImPhone } from "react-icons/im";
+import { FaFax } from "react-icons/fa";
 
 export default function Footer() {
   const navLinks = [
@@ -90,13 +91,40 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <ImPhone size={20} className="shrink-0 mt-1" />
                 <div>
-                  <p className="font-semibold mb-1 text-white">Phone</p>
-                  <Link
-                    href="tel:"
-                    className="hover:text-white transition-colors"
-                  >
-                    +2407908193
-                  </Link>
+                  <p className="font-semibold mb-1 text-white">
+                    Office Numbers
+                  </p>
+                  <div className="space-y-0.5">
+                    <Link
+                      href="tel:+13014710678,,1"
+                      className="block hover:text-white transition-colors"
+                    >
+                      301-471-0678{" "}
+                      <span className="text-blue-200">(Ext. 1)</span>
+                    </Link>
+                    <Link
+                      href="tel:+13014718886,,3"
+                      className="block hover:text-white transition-colors"
+                    >
+                      301-471-8886{" "}
+                      <span className="text-blue-200">(Ext. 3)</span>
+                    </Link>
+                    <Link
+                      href="tel:+13014717223,,2"
+                      className="block hover:text-white transition-colors"
+                    >
+                      301-471-7223{" "}
+                      <span className="text-blue-200">(Ext. 2)</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <FaFax size={20} className="shrink-0 mt-1" />
+                <div>
+                  <p className="font-semibold mb-1 text-white">Fax</p>
+                  <p>301-552-2424</p>
                 </div>
               </div>
 

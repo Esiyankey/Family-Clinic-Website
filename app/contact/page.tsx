@@ -6,7 +6,7 @@ import { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { FiClock, FiMapPin } from "react-icons/fi";
 import Link from "next/link";
-import { FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle, FaFax, FaWheelchair } from "react-icons/fa";
 
 export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false);
@@ -91,19 +91,48 @@ export default function ContactPage() {
             <div>
               <FaPhone className="text-3xl" />
             </div>
-            <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-semibold mb-1">
-                Call or email us
+            <div className="flex flex-col gap-3 w-full">
+              <span className="text-lg md:text-xl font-semibold">
+                Office Numbers
               </span>
-              <a
-                href="tel:+2407908309"
-                className="text-2xl font-semibold leading-tight"
-              >
-                +240-790-8193
-              </a>
+              <div className="space-y-1.5">
+                <a
+                  href="tel:+13014710678,,1"
+                  className="flex items-baseline gap-2 text-lg font-semibold leading-tight hover:text-blue-100"
+                >
+                  301-471-0678
+                  <span className="text-xs font-normal text-blue-100">
+                    (Ext. 1)
+                  </span>
+                </a>
+                <a
+                  href="tel:+13014718886,,3"
+                  className="flex items-baseline gap-2 text-lg font-semibold leading-tight hover:text-blue-100"
+                >
+                  301-471-8886
+                  <span className="text-xs font-normal text-blue-100">
+                    (Ext. 3)
+                  </span>
+                </a>
+                <a
+                  href="tel:+13014717223,,2"
+                  className="flex items-baseline gap-2 text-lg font-semibold leading-tight hover:text-blue-100"
+                >
+                  301-471-7223
+                  <span className="text-xs font-normal text-blue-100">
+                    (Ext. 2)
+                  </span>
+                </a>
+              </div>
+
+              <div className="flex items-center gap-2 pt-2 border-t border-white/20 text-sm text-blue-100">
+                <FaFax className="shrink-0" />
+                <span>Fax: 301-552-2424</span>
+              </div>
+
               <a
                 href="mailto:info@familyclinic.clinic"
-                className="text-blue-100 mt-1 text-sm md:text-base"
+                className="text-blue-100 text-sm md:text-base underline underline-offset-2 hover:text-white"
               >
                 info@familyclinic.clinic
               </a>
@@ -145,18 +174,45 @@ export default function ContactPage() {
             <div>
               <FiClock className="text-3xl" />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-2 w-full">
               <span className="text-lg md:text-xl font-semibold mb-1">
                 Clinic hours
               </span>
-              <span className="text-sm md:text-base text-blue-100">
-                Monday – Thursday: 8:00 AM – 4:30 PM
-              </span>
-             
-              <span className="text-xs md:text-sm text-blue-100 mt-2">
-                Closed from friday - sunday.
-              </span>
+              <div className="space-y-1.5 text-sm md:text-base">
+                <div className="flex items-center justify-between gap-4">
+                  <span>Monday – Thursday</span>
+                  <span className="font-semibold">8:00 AM – 5:00 PM</span>
+                </div>
+                <div className="flex items-center justify-between gap-4 text-blue-100">
+                  <span>Friday</span>
+                  <span className="font-semibold">Closed</span>
+                </div>
+                <div className="flex items-center justify-between gap-4">
+                  <span>Saturday</span>
+                  <span className="font-semibold">8:00 AM – 5:00 PM</span>
+                </div>
+                <div className="flex items-center justify-between gap-4 text-blue-100">
+                  <span>Sunday</span>
+                  <span className="font-semibold">Closed</span>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Accessibility info */}
+        <div className="mt-6 flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 p-5 mx-6">
+          <FaWheelchair className="mt-0.5 shrink-0 text-xl text-[#1a76d1] md:text-2xl" />
+          <div>
+            <p className="mb-1 font-semibold text-gray-900">
+              Accessible Facility
+            </p>
+            <p className="text-sm text-gray-600 md:text-base">
+              Our clinic is wheelchair accessible and designed to accommodate
+              patients with mobility needs. Accessible parking, entranceways,
+              and examination areas are available to help ensure a safe and
+              comfortable visit for every patient.
+            </p>
           </div>
         </div>
       </div>

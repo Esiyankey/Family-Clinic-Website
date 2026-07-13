@@ -49,9 +49,16 @@ export default async function ServiceDetail({ params }: { params: Promise<{ slug
             <Icon className="h-7 w-7" />
           </div>
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-              {service.title}
-            </h1>
+            <div className="flex flex-wrap items-center gap-3">
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
+                {service.title}
+              </h1>
+              {service.badge && (
+                <span className="rounded-full bg-[#1a76d1]/10 px-3 py-1 text-xs font-semibold text-[#1a76d1]">
+                  {service.badge}
+                </span>
+              )}
+            </div>
             <p className="mt-2 text-sm md:text-base text-gray-600">
               {service.description}
             </p>

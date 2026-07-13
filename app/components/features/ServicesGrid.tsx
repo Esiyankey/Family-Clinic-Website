@@ -10,6 +10,7 @@ interface Service {
   icon: IconType;
   title: string;
   description: string;
+  badge?: string;
 }
 
 interface ServicesGridProps {
@@ -36,6 +37,11 @@ export default function ServicesGrid({ services }: ServicesGridProps) {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                 {service.title}
               </h3>
+              {service.badge && (
+                <span className="inline-block w-fit rounded-full bg-[#1a76d1]/10 px-3 py-1 text-xs font-semibold text-[#1a76d1]">
+                  {service.badge}
+                </span>
+              )}
               <p className="text-gray-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed">
                 {service.description}
               </p>

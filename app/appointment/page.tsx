@@ -92,26 +92,32 @@ export default function AppointmentsPage () {
                 </h3>
               </div>
 
-              <div className="space-y-4 text-gray-700 text-base md:text-lg">
-                <div>
-                  <p className="font-medium text-gray-900">
+              <div className="space-y-3 text-gray-700 text-base md:text-lg">
+                <div className="flex items-center justify-between gap-4">
+                  <span className="font-medium text-gray-900">
                     Monday – Thursday
-                  </p>
-                  <p className="text-sm md:text-base">
-                    8 AM – 6 PM (Walk-ins welcome)
-                  </p>
+                  </span>
+                  <span className="text-sm md:text-base">8:00 AM – 5:00 PM</span>
                 </div>
 
-                <div>
-                  <p className="font-medium text-gray-900">
-                    Friday – Saturday
-                  </p>
-                  <p className="text-sm md:text-base">By appointment only</p>
+                <div className="flex items-center justify-between gap-4 text-gray-500">
+                  <span className="font-medium">Friday</span>
+                  <span className="text-sm md:text-base">Closed</span>
+                </div>
+
+                <div className="flex items-center justify-between gap-4">
+                  <span className="font-medium text-gray-900">Saturday</span>
+                  <span className="text-sm md:text-base">8:00 AM – 5:00 PM</span>
+                </div>
+
+                <div className="flex items-center justify-between gap-4 text-gray-500">
+                  <span className="font-medium">Sunday</span>
+                  <span className="text-sm md:text-base">Closed</span>
                 </div>
 
                 <div className="mt-4 pt-4 border-t border-gray-200">
                   <p className="text-gray-600 text-sm md:text-base">
-                    For  questions, reach out during office hours.
+                    For questions, reach out during office hours.
                   </p>
                 </div>
               </div>
@@ -138,9 +144,15 @@ export default function AppointmentsPage () {
             <FiPhone className="text-2xl shrink-0" />
             <div>
               <p className="text-lg md:text-xl font-semibold">Call Us</p>
-              <p className="text-blue-100 text-sm md:text-base">
+              <p className="text-blue-100 text-sm md:text-base mb-1">
                 Have questions about your appointment?
               </p>
+              <a
+                href="tel:+13014710678"
+                className="text-lg font-semibold hover:text-blue-100"
+              >
+                301-471-0678
+              </a>
             </div>
           </div>
 

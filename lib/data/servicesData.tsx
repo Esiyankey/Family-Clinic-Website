@@ -1,8 +1,8 @@
-import { 
+import {
   FaClipboardList,
-  FaVial,
+  FaTruckMedical,
   FaLeaf,
-  FaVideo 
+  FaVideo
 } from "react-icons/fa6";
 import { GiHeartBeats } from "react-icons/gi";
 
@@ -47,21 +47,22 @@ export const servicesData = [
 
   {
     id: 3,
-    icon: FaVial,
-    title: "Laboratory Testing",
-    slug: "laboratory-testing",
-    description: "Reliable on-site diagnostics with fast digital results.",
+    icon: FaTruckMedical,
+    title: "DOT Physical Exam",
+    slug: "dot-physical-exam",
+    description: "Federally required medical exams for commercial motor vehicle drivers.",
     longDescription:
-      "Our Laboratory Testing services provide fast, accurate diagnostic results to support effective treatment. We offer comprehensive bloodwork, urinalysis, infection screening, pregnancy tests, wellness panels, and more. All tests are performed by certified technicians using modern diagnostic equipment, with results delivered securely online.",
-    image: "/images/services/lab-testing.jpg",
+      "Department of Transportation (DOT) physical examinations are federally required medical evaluations for commercial motor vehicle (CMV) drivers. During the exam, a certified medical examiner reviews your medical history, checks your vision, hearing, blood pressure, and overall physical health to determine whether you meet the Federal Motor Carrier Safety Administration (FMCSA) medical standards for safely operating a commercial vehicle.",
+    image: "/images/services/dot-physical-exam.jpg",
+    badge: "Available Saturdays Only",
     benefits: [
-      "Fast and reliable diagnostic testing",
-      "Digital or secure email delivery of results",
-      "Accurate data to support treatment decisions",
-      "Wide range of in-house tests available"
+      "FMCSA-compliant medical evaluations",
+      "Vision, hearing, and blood pressure screening",
+      "Certified medical examiner review",
+      "Required for CMV driver certification"
     ],
-   
-    // cta: "Book a Laboratory Test",
+
+    // cta: "Schedule a DOT Physical Exam",
   },
 
   {

@@ -245,10 +245,10 @@ export default function Page() {
                 variant="outline"
                 className="border-white/50 bg-transparent text-white hover:bg-white hover:text-slate-900"
               >
-                <a href="tel:+233000000000">Call +233 00 000 000</a>
+                <a href="tel:+13014710678">Call 301-471-0678</a>
               </Button>
             </div>
-            <p className="text-xs md:text-sm text-blue-100/90">Open Monday–Thursday · Now accepting new patients</p>
+            <p className="text-xs md:text-sm text-blue-100/90">Open Mon–Thu &amp; Sat · Now accepting new patients</p>
           </div>
 
           

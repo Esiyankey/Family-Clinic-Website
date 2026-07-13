@@ -44,9 +44,12 @@ export default function AboutUsSection() {
 
               <div>
                 <p className="text-xs md:text-sm text-gray-500">Emergency</p>
-                <p className="text-lg md:text-xl font-bold text-gray-800">
-                  (+233) 0123456789
-                </p>
+                <a
+                  href="tel:+13014710678"
+                  className="text-lg md:text-xl font-bold text-gray-800 hover:text-[#1a76d1] transition-colors"
+                >
+                  301-471-0678
+                </a>
               </div>
             </div>
           </div>
