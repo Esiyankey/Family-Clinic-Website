@@ -73,15 +73,20 @@ export const Navbar = () => {
         } `}
       >
         <div className="flex  justify-between items-center  max-w-5/6 mx-auto   ">
-          <div>
+          <div className="flex items-center gap-3">
             <Image
               src="/images/family_clinic_logo.PNG"
               width={80}
               height={80}
-              alt="logo-here"
-              className=" sm:w-16 sm:h-16 md:w-20 md:h-20"
+              alt="Family Clinic logo"
+              className="sm:w-16 sm:h-16 md:w-20 md:h-20"
             />
+
+            <span className="text-xl md:text-2xl font-semibold text-[#1a76d1] leading-none">
+              Family Clinic
+            </span>
           </div>
+
           <div className="flex gap-12 items-center">
             <div className="hidden  lg:flex gap-12 mr-16">
               {links.map((link) => {
@@ -116,7 +121,10 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          <div className="lg:hidden cursor-pointer h-10 w-10 rounded-sm border flex items-center justify-center" onClick={() => setShowMenu(!showMenu)} >
+          <div
+            className="lg:hidden cursor-pointer h-10 w-10 rounded-sm border flex items-center justify-center"
+            onClick={() => setShowMenu(!showMenu)}
+          >
             {showMenu ? (
               <FaX
                 size={18}
@@ -145,11 +153,11 @@ export const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   className={` ${
-                      isActiveLink
-                        ? "text-[#1a76d1] border-b-2 border-b-[#1a76d1]"
-                        : ""
-                    }text-xl font-light border-transparent transition`}
-                    onClick={()=>setShowMenu(!showMenu)}
+                    isActiveLink
+                      ? "text-[#1a76d1] border-b-2 border-b-[#1a76d1]"
+                      : ""
+                  }text-xl font-light border-transparent transition`}
+                  onClick={() => setShowMenu(!showMenu)}
                 >
                   {link.name}
                 </Link>
