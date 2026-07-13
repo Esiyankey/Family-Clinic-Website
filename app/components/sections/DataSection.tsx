@@ -1,4 +1,5 @@
 "use client";
+import { FaWheelchair } from "react-icons/fa";
 
 const stats = [
   { label: "Families served", value: "2,000+" },
@@ -14,6 +15,8 @@ export function DataSection() {
       className="bg-[#1a76d1] py-12 md:py-16 lg:py-18 text-white"
     >
       <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8">
+        <div className="flex justify-between items-center gap-6 flex-col md:flex-row">
+
         <div
           className="mb-8 max-w-xl text-center md:text-left"
           data-aos="fade-up"
@@ -28,6 +31,20 @@ export function DataSection() {
             We combine experience, compassion and modern technology to deliver
             safe, reliable care for every visit.
           </p>
+        </div>
+        <div className="mt-6 w-88 mb-12 flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 p-5 mx-6">
+          <FaWheelchair className="mt-0.5 shrink-0 text-xl text-[#1a76d1] md:text-2xl" />
+          <div>
+            <p className="mb-1 font-semibold text-gray-900">
+              Accessible Facility
+            </p>
+            <p className="text-sm text-gray-600 md:text-base">
+              Our clinic is wheelchair accessible and designed to accommodate
+              patients with mobility needs.Parking, Entranceways,
+              and Examination areas are available.
+            </p>
+          </div>
+        </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

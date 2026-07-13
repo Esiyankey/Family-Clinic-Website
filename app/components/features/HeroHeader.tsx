@@ -15,7 +15,7 @@ export default function HeroHeader({ title, breadcrumbs }: HeroHeaderProps) {
     <div
       className="relative w-full py-24 md:py-32 bg-linear-to-b from-[#7fbbf6] to-[#1a76d1] overflow-hidden"
       style={{
-        backgroundImage: `url('/images/clinic_image.jpg')`,
+        backgroundImage: `url('/images/clinic.jpeg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundBlendMode: "overlay",

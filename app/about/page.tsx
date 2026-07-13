@@ -43,12 +43,12 @@ export default function AboutUsSection() {
               </div>
 
               <div>
-                <p className="text-xs md:text-sm text-gray-500">Emergency</p>
+                <p className="text-xs md:text-sm text-gray-500">Emergency? Call </p>
                 <a
-                  href="tel:+13014710678"
+                  href="tel:+1911"
                   className="text-lg md:text-xl font-bold text-gray-800 hover:text-[#1a76d1] transition-colors"
                 >
-                  301-471-0678
+                 911
                 </a>
               </div>
             </div>

@@ -195,20 +195,7 @@ export default function ContactPage() {
         </div>
 
         {/* Accessibility info */}
-        <div className="mt-6 flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50 p-5 mx-6">
-          <FaWheelchair className="mt-0.5 shrink-0 text-xl text-[#1a76d1] md:text-2xl" />
-          <div>
-            <p className="mb-1 font-semibold text-gray-900">
-              Accessible Facility
-            </p>
-            <p className="text-sm text-gray-600 md:text-base">
-              Our clinic is wheelchair accessible and designed to accommodate
-              patients with mobility needs. Accessible parking, entranceways,
-              and examination areas are available to help ensure a safe and
-              comfortable visit for every patient.
-            </p>
-          </div>
-        </div>
+        
       </div>
     </main>
   );
