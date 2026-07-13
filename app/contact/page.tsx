@@ -183,18 +183,12 @@ export default function ContactPage() {
                   <span>Monday – Thursday</span>
                   <span className="font-semibold">8:00 AM – 5:00 PM</span>
                 </div>
-                <div className="flex items-center justify-between gap-4 text-blue-100">
-                  <span>Friday</span>
-                  <span className="font-semibold">Closed</span>
-                </div>
+               
                 <div className="flex items-center justify-between gap-4">
                   <span>Saturday</span>
                   <span className="font-semibold">8:00 AM – 5:00 PM</span>
                 </div>
-                <div className="flex items-center justify-between gap-4 text-blue-100">
-                  <span>Sunday</span>
-                  <span className="font-semibold">Closed</span>
-                </div>
+               
               </div>
             </div>
           </div>
