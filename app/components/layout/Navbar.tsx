@@ -82,9 +82,7 @@ export const Navbar = () => {
               className="sm:w-16 sm:h-16 md:w-20 md:h-20"
             />
 
-            <span className="text-xl md:text-2xl font-semibold text-[#1a76d1] leading-none">
-              Family Clinic
-            </span>
+          
           </div>
 
           <div className="flex gap-12 items-center">
