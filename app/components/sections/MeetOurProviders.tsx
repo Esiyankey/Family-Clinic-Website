@@ -14,7 +14,7 @@ type Provider = {
 const providers: Provider[] = [
   {
     name: "Linda Biney, MSN, FNP",
-    credentials: "Founder",
+    credentials: "Certified Registered Nurse Practitioner / Owner",
     bio: "Linda Biney is the founder of Family Clinic and a Family Nurse Practitioner with extensive experience in primary care, urgent care, and bedside nursing. She is committed to providing compassionate, evidence-based healthcare while promoting preventive medicine and personalized care for every patient.",
     image: "/images/Linda_remini.jpg",
   },
@@ -52,7 +52,7 @@ export function MeetOurProviders() {
                   src={provider.image}
                   alt={provider.name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
 
