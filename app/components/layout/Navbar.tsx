@@ -43,10 +43,10 @@ export const Navbar = () => {
               fill="currentColor"
             />
             <a
-              href="tel:+13014710678"
+              href="tel:+13014718886"
               className="text-sm md:text-lg hover:text-[#1a76d1] transition-colors"
             >
-              301-471-0678
+              301-471-8886
             </a>
           </div>
           <div className="flex gap-2 items-center">
@@ -59,11 +59,6 @@ export const Navbar = () => {
             </a>
           </div>
         </div>
-        {/* <div>
-          <span className="hover:text-[#1a76d1] text-sm md:text-lg cursor-pointer">
-            admin login
-          </span>
-        </div> */}
       </div>
       <div className="w-full h-0.5 bg-[#eeeeee]"></div>
 
@@ -72,17 +67,25 @@ export const Navbar = () => {
           scrollY > 40 ? "fixed top-0 w-full z-50 shadow-sm" : "relative "
         } `}
       >
-        <div className="flex  justify-between items-center  max-w-5/6 mx-auto   ">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/images/familycliniclogo.png"
-              width={80}
-              height={80}
-              alt="Family Clinic logo"
-              className="sm:w-16 sm:h-16 md:w-20 md:h-20"
-            />
-
-          
+        <div className="flex justify-between items-center max-w-5/6 mx-auto h-16 lg:h-20">
+          <div className="relative flex items-center h-16 lg:h-20">
+            <div
+              className="
+    absolute 
+    top-1/2 
+    -translate-y-1/2
+    w-36 h-36 lg:w-44 lg:h-44
+    flex items-center justify-center
+  "
+            >
+              <Image
+                src="/images/familycliniclogo.png"
+                width={130}
+                height={130}
+                alt="Family Clinic logo"
+                className="object-contain"
+              />
+            </div>
           </div>
 
           <div className="flex gap-12 items-center">
