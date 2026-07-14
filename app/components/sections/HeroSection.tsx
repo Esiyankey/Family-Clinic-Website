@@ -29,7 +29,7 @@ const backgroundImages = [
   "/images/lat_doc_img.jpg",
   "/images/lat_doc_img4.jpg",
   "/images/group-image.jpg",
-  "/images/clinic_image.jpg",
+  "/images/clinic.jpeg",
 ]
 
 export default function Page() {
@@ -95,7 +95,7 @@ export default function Page() {
                 variant="outline"
                 className="border-white/50 bg-transparent text-white hover:bg-white hover:text-slate-900"
               >
-                <a href="tel:+13014710678">Call 301-471-0678</a>
+                <a href="tel:+13014718886">Call 301-471-8886</a>
               </Button>
             </div>
             <p className="text-xs md:text-sm text-blue-100/90">Open Mon–Thu &amp; Sat · Now accepting new patients</p>
