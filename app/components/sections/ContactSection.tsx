@@ -17,7 +17,7 @@ export function ContactSection() {
               href="tel:+13014710678"
               className="font-semibold underline decoration-white/60 underline-offset-2"
             >
-              301-471-0678
+              911
             </a>{" "}
             immediately.
           </p>
