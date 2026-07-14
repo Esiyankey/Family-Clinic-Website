@@ -3,7 +3,7 @@ import { FaWheelchair } from "react-icons/fa";
 
 const stats = [
   { label: "Families served", value: "2,000+" },
-  { label: "Years of care", value: "5+" },
+  { label: "Years of care", value: "10+" },
   { label: "Healthcare professionals", value: "30+" },
   { label: "Patient satisfaction", value: "95%" },
 ];
